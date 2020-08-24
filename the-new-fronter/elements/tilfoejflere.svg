@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 58 60">
+  <defs>
+    <style>
+      .cls-1 {
+        clip-path: url(#clip-tilføj_svg);
+      }
+
+      .cls-2 {
+        fill: #223249;
+      }
+
+      .cls-3 {
+        fill: #fff;
+      }
+    </style>
+    <clipPath id="clip-tilføj_svg">
+      <rect width="58" height="60"/>
+    </clipPath>
+  </defs>
+  <g id="tilføj_svg" data-name="tilføj svg" class="cls-1">
+    <rect class="cls-3" width="58" height="60"/>
+    <g id="Group_116" data-name="Group 116" transform="translate(-2133 1631)">
+      <path id="Path_267" data-name="Path 267" class="cls-2" d="M28,0A28,28,0,1,1,0,28,28,28,0,0,1,28,0Z" transform="translate(2134 -1629)"/>
+      <g id="_" data-name="+" transform="translate(1847 -1726)">
+        <path id="Union_1" data-name="Union 1" class="cls-3" d="M12.468,28.5V16.031H0V12.469H12.468V0h3.564V12.469H28.5v3.563H16.032V28.5Z" transform="translate(301 111)"/>
+      </g>
+    </g>
+  </g>
+</svg>

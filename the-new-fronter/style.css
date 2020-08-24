@@ -1,0 +1,963 @@
+/*---------------------------------------------------
+1: Variables & Common styling
+2: Element specific styles
+3. Page specific styles
+---------------------------------------------------*/
+
+/*---------------------------------------------------
+1: Common styling & Variables
+---------------------------------------------------*/
+
+html {
+    background-color: white;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+.read_more a {
+    text-decoration: none;
+    color: white;
+}
+
+.blue_background {
+    background-color: #223249;
+    height: 100vh;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.padded {
+    padding: 5%;
+}
+
+.rounded {
+    border-radius: 10px;
+}
+
+.centered {
+    text-align: center;
+}
+
+
+
+.button a {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    color: white;
+}
+
+.button_black a {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    color: black;
+}
+
+h2, h3, h4, p, .dim_text {
+    margin: 1vh 5vw 1vh 5vw;
+    font-weight: normal;
+}
+
+small {
+    font-size: 0.7em;
+}
+
+.dim_text {
+    opacity: 0.5;
+}
+
+.read_more {
+    width: 95%;
+    text-align: right;
+    font-weight: bold;
+    margin: 2vh auto;
+}
+
+.hidden {
+    display: none;
+}
+
+/*---------------------------------------------------
+5. Element specific styles
+---------------------------------------------------*/
+
+
+/*Header*/
+
+#header {
+    width: 100vw;
+    background-color: #223249;
+}
+
+#header_container {
+    display: flex;
+    justify-content: space-between;
+    padding: 2vh;
+}
+
+.header_img {
+    width: 100vw;
+}
+
+#header img {
+    height: 4vh;
+}
+
+.header_logo {
+    text-align: left;
+}
+
+.header_icon {
+    text-align: center;
+}
+
+.header_title {
+    text-align: center;
+    color: white;
+    margin-top: 0.8vh;
+    font-size: 2.5vh;
+}
+
+.header_menu {
+    text-align: right;
+}
+
+/*Chat header*/
+
+#chat_header {
+    width: 100vw;
+    background-color: #2D415F;
+    margin-bottom: 3%;
+    margin-top: -1%;
+}
+
+#chat_header_container {
+    display: flex;
+    justify-content: space-between;
+    padding: 2vh;
+}
+
+#chat_header img {
+    height: 4vh;
+}
+
+/*Icons*/
+
+.arrow_back {
+    height: 3vh;
+    margin-top: 1vh;
+}
+
+.arrow {
+    height: 0.7em;
+}
+
+.location_icon {
+    height: 1em;
+}
+
+.icon {
+    position: absolute;
+    right: 7vw;
+    width: 1.2em;
+}
+
+
+/*Content*/
+
+.text_content {
+    display: inline-block;
+    border: 1px solid black;
+    width: 80%;
+    margin: 3% 0% 3% 10%;
+    background-color: pink;
+}
+
+
+/*Contacts*/
+
+.contact_row {
+    display: flex;
+}
+
+.contact_row_centered {
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 10vh;
+    margin-right: 1vh;
+}
+
+.contact_img {
+    display: inline-block;
+    flex-basis: 10vh;
+    width: 10vh;
+    height: 10vh;
+    border-radius: 1000px;
+    background-color: #223249;
+}
+
+.contact_img img {
+    width: 50%;
+    margin: 25% 0 0 0;
+}
+
+.active_line {
+    margin: 0 33%;
+    padding: 0;
+    width: 30%;
+}
+
+/*---------------------------------------------------
+3. Page specific styles
+---------------------------------------------------*/
+
+/*Burger menu*/
+
+#burger_menu {
+    background-color: #223249;
+    height: 100vh;
+    width: 100vw;
+    text-align: center;
+    color: white;
+    padding-top: 13vh;
+}
+
+#burger_menu hr {
+    width: 50%;
+    margin: 2vh auto;
+}
+
+.menu_link a {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    color: white;
+    font-size: 1.3em;
+}
+
+
+/*Front page*/
+
+.news_divider {
+    width: 90%;
+    margin: 2vh auto;
+}
+
+/*Schedule and lessons*/
+
+.block {
+    display: inline-block;
+    width: 100%;
+    margin: 1% 0;
+    padding: 2% 0;
+}
+
+.block p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+
+.schedule_lesson_light {
+    background-color: #8ED2C9;
+    color: white;
+}
+
+.schedule_lesson_dark {
+    background-color: #00AAA0;
+    color: white;
+}
+
+.schedule_assignment {
+    background-color: #EB6D64;
+    color: white;
+}
+
+.schedule_break {
+    background-color: #2e73c1;
+    color: white;
+}
+
+.schedule_document {
+    display: flex;
+    background-color: #EFEFEF;
+    width: 100%;
+}
+
+.schedule_date {
+    text-align: center;
+    color: #EB6D64;
+
+}
+
+.document_icon {
+    display: inline-block;
+    background-color: #BABABA;
+    height: 13vh;
+    min-width: 14vh;
+    color: #223249;
+}
+
+.document_icon img {
+    height: 70%;
+    margin: 15%;
+}
+
+.document_text {
+    font-size: 1rem;
+    margin: 1vh 0 1vh -2vw;
+}
+
+.location {
+    background-color: #efefef;
+    border-radius: 1000px;
+}
+
+.location_text {
+    background-color: #efefef;
+    border-radius: 1000px;
+}
+
+/*Login page and forgotten password*/
+
+.form_group {
+    width: 100%;
+}
+
+.login_form {
+    text-align: right;
+    margin: 0 15%;
+}
+
+.page_bottom {
+    width: 100%;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+}
+
+.page_bottom a {
+    text-decoration: none;
+    color: white;}
+
+.uni_login {
+    width: 90%;
+    padding: 5%;
+    background-color: #FEFEFE;
+    text-align: center;
+    border: 1px solid dimgrey;
+    border-radius: 1000px;
+}
+
+.uni_login a {
+    color: black;
+}
+
+.login_image {
+    display: inline-block;
+    width: 100%;
+    height: 30vh;
+    margin-top: 3vh;
+    background-color: cadetblue;
+    margin-bottom: 8vh;
+}
+
+.login_image img {
+    width: 100%;
+}
+
+.password_image {
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+    margin-top: 5vh;
+    margin-bottom: 8vh;
+}
+
+.password_image img {
+    width: 50%;
+}
+
+input {
+    width: 90%;
+    padding: 5%;
+    margin: 2% 0;
+    border-radius: 1000px;
+    border: 1px solid dimgrey;
+    background-color: black;
+    color: white;
+}
+
+input[type=submit] {
+    width: 50%;
+    margin: 0;
+    padding: 5%;
+}
+
+
+/*---------Assignment Overview------------*/
+
+.selectbox {
+    display: inherit;
+    height: 12vw;
+    width: 73vw;
+
+    text-align: center;
+    border: 1px solid grey;
+    font-size: 10vw;
+
+    padding: 4vw;
+    margin: 5vw;
+}
+
+
+#overview {
+    align-items: center;
+
+}
+
+/*--Afleveringer--*/
+.assignment {
+    display: inherit;
+    height: 9vw;
+    width: 75vw;
+
+    text-align: center;
+    border: 1px solid grey;
+    font-size: 4vw;
+
+    padding: 1.3vw;
+    margin: 2vw;
+}
+
+
+/*--Aflevering 04.01.01--*/
+.container {
+    margin: 10%;
+    padding: 10%;
+}
+
+.applieddate {
+    display: inherit;
+    border: 1px dashed grey;
+
+    margin: 1%;
+}
+
+
+/*Øverstebox*/
+.assignmentbar {
+    display: inherit;
+    height: 20vw;
+    width: 90vw;
+
+    border: 1px solid grey;
+
+    padding: 0.5%;
+    margin: 5%;
+}
+
+.appliedby {
+    display: inherit;
+    border: 1px solid grey;
+}
+
+.applied {}
+
+.statusbar {
+    display: inherit;
+    border: 1px solid grey;
+}
+
+.status {}
+
+.feedbackbox {
+    display: inherit;
+    height: 70vw;
+    width: 90vw;
+
+    border: 1px solid grey;
+
+    padding: 0.5%;
+    margin: 5%;
+}
+
+.feedback {
+    display: inherit;
+    border: 1px solid grey;
+}
+
+.feedbacktext {
+    display: inherit;
+    height: 185px;
+
+    border: 1px solid grey;
+}
+
+.correctedbox {
+    display: flex;
+    height: 15vw;
+
+    border: 1px solid grey;
+}
+
+.correctedtext {
+    display: inherit;
+    width: 50px;
+
+    border: 1px solid grey;
+    text-align: left;
+
+    padding: inherit;
+    margin: inherit;
+}
+
+.correctedby {
+    display: inherit;
+    width: 10vw;
+
+    border: 1px solid grey;
+}
+
+.correctedbyicon {
+    display: inherit;
+    height: 12vw;
+    width: 12vw;
+
+    border: 1px solid grey;
+    border-radius: 100vw;
+}
+
+/*---------Assignment Overview END------------*/
+
+/*---------Aflevering single view-------------*/
+
+
+.aflevering_singleview {
+    background-color: #eaeaea;
+    color: #EB6D64;
+    display: flex;
+    box-shadow: 0 8px 10px -3px #d0d0d0;
+    border-radius: 1000px;
+    width: 60vw;
+
+
+}
+
+.clock {
+    height: 4vh;
+    display: flex;
+    margin: 0.6vw 0.6vw 0vw 0.9vw;
+
+
+}
+
+.afleverings_dato {
+    display: flex;
+    font-size: 1.2em;
+
+
+
+}
+
+.upload_dokument {
+    background-color: #8ED2C9;
+    color: white;
+    display: flex;
+    box-shadow: 0 8px 10px -3px #d0d0d0;
+    border-radius: 1000px;
+    height: 7vh;
+    width: 44vw;
+
+
+
+}
+
+.upload_icon {
+    margin: 5% 6vw 0 2vw;
+}
+
+.icon_left {
+    position: absolute;
+
+    height: 4%;
+}
+
+.upload_tekst {
+    display: flex;
+
+
+}
+
+
+.tilfoej_flere {}
+
+/*---------Aflevering single view end---------*/
+
+.top_tekst {
+    text-align: center;
+    font-size: 4vw;
+}
+
+
+/*---------Afleverings sider ---------*/
+
+
+.assignment_blocks {
+    color: white;
+    text-align: center;
+    font-size: 5vw;
+
+}
+
+.aflevering_tekst {
+    text-align: center;
+}
+
+.assignment_blocks_left {
+    color: white;
+    font-size: 5vw;
+    text-align: left;
+
+}
+
+.assignment_light {
+    background-color: #F29D96;
+    padding: 10vw 0.1vw 10vw 0.1vw;
+
+}
+
+.assignment_dark {
+    background-color: #EB6D64;
+    padding: 10vw 0.1vw 10vw 0.1vw;
+
+}
+
+
+.aflevering3 {
+    padding: 1vw;
+
+
+}
+
+.lup_icon1 {
+    position: absolute;
+    left: 360px;
+    top: 146px;
+}
+
+.lup_icon2 {
+    position: absolute;
+    left: 360px;
+    top: 233px;
+}
+
+.lup_icon3 {
+    position: absolute;
+    left: 360px;
+    top: 318px;
+}
+
+.lup_icon4 {
+    position: absolute;
+    left: 360px;
+    top: 408px;
+}
+
+.lup_icon5 {
+    position: absolute;
+    left: 360px;
+    top: 493px;
+}
+
+#check_icon {
+    width: 10vw;
+    height: 10vw;
+    position: absolute;
+}
+
+.check_icon1 {
+    left: 345px;
+    top: 263px
+}
+
+.check_icon2 {
+    left: 345px;
+    top: 350px;
+}
+
+.check_icon3 {
+    left: 345px;
+    top: 438px;
+}
+
+.check_icon4 {
+    left: 345px;
+    top: 526px;
+}
+
+
+/*---------Afleverings sider end---------*/
+
+/*---------Assignment Overview END------------*/
+
+/*---------Chatroom------------*/
+
+.chattypebox {
+    border: 1px solid grey;
+    height: 25vw;
+
+}
+
+.chattitel {
+    display: flex;
+    height: 10vw;
+    text-align: center;
+}
+
+.chattitel h2 {
+    padding: 1vw;
+    align-self: center;
+    margin: 2vw 31vw;
+}
+
+/*Chat Messages*/
+
+.chatbox h3 {
+    font-size: 4vw;
+    color: #5b5b5b;
+}
+
+.chatroom a {
+    width: 10vw;
+    height: 10vw;
+
+}
+
+.monday {
+    text-align: center;
+    margin: 2.5vw;
+}
+
+.tuesday {
+    text-align: center;
+    margin: 2.5vw;
+}
+
+.thursday {
+    text-align: center;
+    margin: 2.5vw;
+}
+
+.friday {
+    text-align: center;
+    margin: 2.5vw;
+}
+
+.today {
+    text-align: center;
+    margin: 2.5vw;
+}
+
+.reciever {
+    width: 70vw;
+}
+
+.sender {
+    width: 70vw;
+    margin-left: 26vw;
+}
+
+.chatmessage {
+    box-shadow: 0 8px 10px -3px #929292;
+
+    margin: 4vw;
+    padding: 1vw;
+    border-radius: 5vw;
+}
+
+.chatcontainer {
+    margin-bottom: 20vh;
+}
+
+.reciever .chatmessage {
+    background-color: #e7e7e7;
+}
+
+.sender .chatmessage {
+    background-color: darkturquoise;
+}
+
+.chatmessage p {
+    margin: 1vw;
+    color: white;
+}
+
+.messagedate {
+    margin-left: 40vw;
+    font-size: 3vw;
+}
+
+.reciever .messagedate p {
+    color: darkgrey;
+}
+
+.sender .messagedate p {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+/*Chat Messages END*/
+
+/*Chat Typing*/
+
+.chattypebox {
+    background-color: #233a56;
+    height: 17vh;
+    width: 100%
+}
+
+.chattypetext input[type=text] {
+    height: 5vw;
+    width: 80vw;
+    border-radius: 3vw;
+
+    margin: auto;
+    margin-top: 2.5vw;
+    margin-left: 3vw;
+    background-color: #2f4968;
+}
+
+.chatbuttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.chatroomsend input[type=submit] {
+    height: 7vw;
+    width: 19vw;
+    border-radius: 2vw;
+
+    background-color: #2f4968;
+    margin-right: 4.5vw;
+    margin-top: 1.5vw;
+}
+
+.chatroomsend p {
+    color: white;
+}
+
+.chaticons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2.5vw;
+}
+
+.chatroomicon {
+    display: flex;
+    width: 5vw;
+    height: 5vw;
+
+    margin-right: 7vw;
+    cursor: pointer;
+}
+
+/*Chat Typing END*/
+
+/*-------Chatroom END----------*/
+
+
+/*stefans nmapper*/
+
+.aflever_knap {
+    display: flex;
+    justify-content: space-between;
+}
+
+.aflever_knap button{
+    display: flex;
+    color: white;
+    padding: 2vh;
+    background-color: #8ED2C9;
+    box-shadow: 0 8px 10px -3px #d0d0d0;
+    border-radius: 1000px;
+    width: 40vw;
+    border: none;
+
+}
+
+.button_text {
+    margin-top: 1%;
+    margin-left: 3%;
+}
+
+.stefanscircle{
+    width: 20px;
+}
+
+/*Feedback site*/
+
+.afleveret_dato {
+    width: 100%;
+    text-align: right;
+}
+
+
+.afleveret_dato_tekst {
+    width: 50%;
+    background-color: #eaeaea;
+    color: #EB6D64;
+    display: flex;
+    box-shadow: 0 8px 10px -3px #d0d0d0;
+    border-radius: 1000vw;
+    margin: 2vw;
+
+}
+
+.person {
+    display: flex;
+    justify-content: flex-end;
+    margin: 8px 16px;
+}
+
+.contact_icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact_icon .contact {
+    margin: 0;
+}
+
+.contact_icon p {
+    color: black;
+    margin: 3px 0 0 0;
+}
+
+.feedback_tekst,
+.afleveret_af {
+    background-color: #EB6D64;
+    color: white;
+}
+
+.feedback_tekst {
+    /*padding-bottom: 25vw;*/
+}
+
+.status {
+    background-color: #F29D96;
+    color: white;
+}
