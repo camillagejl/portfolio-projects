@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="350" height="750" viewBox="0 0 350 750">
+  <metadata><?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?>
+<x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.6-c142 79.160924, 2017/07/13-01:06:39        ">
+   <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+      <rdf:Description rdf:about=""/>
+   </rdf:RDF>
+</x:xmpmeta>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<?xpacket end="w"?></metadata>
+<defs>
+    <style>
+      .cls-1, .cls-2, .cls-3 {
+        fill: none;
+      }
+
+      .cls-1, .cls-2, .cls-3, .cls-4 {
+        stroke: #000;
+      }
+
+      .cls-1 {
+        stroke-width: 3px;
+      }
+
+      .cls-1, .cls-2, .cls-4 {
+        fill-rule: evenodd;
+      }
+
+      .cls-2, .cls-3, .cls-4 {
+        stroke-width: 5px;
+      }
+    </style>
+  </defs>
+  <g id="boy">
+    <g id="Boy-2" data-name="Boy">
+      <path class="cls-1" d="M6107.92,1117.34a160.285,160.285,0,1,1-160.26,160.29A160.28,160.28,0,0,1,6107.92,1117.34Z" transform="translate(-5932 -1102)"/>
+      <path class="cls-2" d="M6165.92,1207.5a37.155,37.155,0,1,1-37.14,37.16A37.153,37.153,0,0,1,6165.92,1207.5Z" transform="translate(-5932 -1102)"/>
+      <circle class="cls-3" cx="134.595" cy="142.655" r="37.155"/>
+      <path class="cls-4" d="M6157.58,1235.91a16.265,16.265,0,1,1-16.27,16.26A16.26,16.26,0,0,1,6157.58,1235.91Z" transform="translate(-5932 -1102)"/>
+      <path class="cls-4" d="M6057.41,1235.91a16.265,16.265,0,1,1-16.28,16.26A16.271,16.271,0,0,1,6057.41,1235.91Z" transform="translate(-5932 -1102)"/>
+      <path class="cls-2" d="M6063.67,1342.75v-0.84h102.67v0.84H6063.67Z" transform="translate(-5932 -1102)"/>
+      <path class="cls-2" d="M6107.91,1436.25h0.84v380.66h-0.84V1436.25Z" transform="translate(-5932 -1102)"/>
+      <path class="cls-2" d="M6108.13,1507.68l-0.43.71,96.83,58.44,0.43-.71Zm0.4,0.84,0.43,0.71-96.83,58.44-0.43-.72Zm0,0,0.43,0.71-96.83,58.44-0.43-.72Z" transform="translate(-5932 -1102)"/>
+    </g>
+  </g>
+</svg>

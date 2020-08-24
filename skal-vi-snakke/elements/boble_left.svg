@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="570" height="250" viewBox="0 0 570 250">
+  <metadata><?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?>
+<x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.6-c142 79.160924, 2017/07/13-01:06:39        ">
+   <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+      <rdf:Description rdf:about=""/>
+   </rdf:RDF>
+</x:xmpmeta>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<?xpacket end="w"?></metadata>
+<defs>
+    <style>
+      .cls-1, .cls-4 {
+        fill: none;
+        stroke: #000;
+        fill-rule: evenodd;
+      }
+
+      .cls-1 {
+        stroke-width: 5px;
+      }
+
+      .cls-2, .cls-3 {
+        font-size: 48px;
+        text-anchor: middle;
+      }
+
+      .cls-3 {
+        font-family: Roboto;
+      }
+
+      .cls-4 {
+        stroke-width: 3px;
+      }
+    </style>
+    <path id="text-path" d="M3053.11,268.567L3047.37,95"/>
+  </defs>
+  <g id="boble_left">
+    <path id="Rounded_Rectangle_1" data-name="Rounded Rectangle 1" class="cls-1" d="M5677.09,2036.94h509.13a10,10,0,0,1,10,10v185.37a10,10,0,0,1-10,10H5677.09a10,10,0,0,1-10-10V2046.94A10,10,0,0,1,5677.09,2036.94Z" transform="translate(-5661 -2021)"/>
+    <text class="cls-2" transform="translate(-5661 -2021) scale(0.835 0.835)"><textPath startOffset="50%" xlink:href="#text-path"><tspan class="cls-3">Jeg har været med til at dele billeder af Belinda uden hendes tilladelse.</tspan></textPath></text>
+    <path id="Polygon_3" data-name="Polygon 3" class="cls-4" d="M6225.66,2140.31l-29.27,39.95v-79.89Z" transform="translate(-5661 -2021)"/>
+  </g>
+</svg>

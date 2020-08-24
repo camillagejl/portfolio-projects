@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="570" height="250" viewBox="0 0 570 250">
+  <metadata><?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?>
+<x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.6-c142 79.160924, 2017/07/13-01:06:39        ">
+   <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+      <rdf:Description rdf:about=""/>
+   </rdf:RDF>
+</x:xmpmeta>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<?xpacket end="w"?></metadata>
+<defs>
+    <style>
+      .cls-1, .cls-2 {
+        fill: none;
+        stroke: #000;
+        fill-rule: evenodd;
+      }
+
+      .cls-1 {
+        stroke-width: 3px;
+      }
+
+      .cls-2 {
+        stroke-width: 5px;
+      }
+
+      .cls-3, .cls-4 {
+        font-size: 48px;
+        text-anchor: middle;
+      }
+
+      .cls-4 {
+        font-family: Roboto;
+      }
+    </style>
+    <path id="text-path" d="M3053.11,268.567L3047.37,95"/>
+  </defs>
+  <g id="boble_right">
+    <path id="Polygon_3" data-name="Polygon 3" class="cls-1" d="M4992.5,2136.68l29.28,39.94v-79.89Z" transform="translate(-4991 -2021)"/>
+    <path id="Rounded_Rectangle_1" data-name="Rounded Rectangle 1" class="cls-2" d="M5031.47,2039.13h509.09a9.991,9.991,0,0,1,10,10V2234.5a10,10,0,0,1-10,10H5031.47a10,10,0,0,1-10-10V2049.13A10,10,0,0,1,5031.47,2039.13Z" transform="translate(-4991 -2021)"/>
+    <text class="cls-3" transform="translate(-4991 -2021) scale(0.835 0.835)"><textPath startOffset="50%" xlink:href="#text-path"><tspan class="cls-4">Skal Futte ikke snart til hundefrisør?</tspan></textPath></text>
+  </g>
+</svg>

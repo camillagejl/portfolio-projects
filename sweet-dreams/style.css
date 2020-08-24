@@ -1,0 +1,592 @@
+/* HTML */
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-color: #19315B;
+    font-family: 'Courgette', cursive;
+
+}
+
+#screen {
+    /* @see https://stackoverflow.com/a/20593342/1155596 */
+    width: 100vw;
+    height: 56.25vw;
+    max-height: 100vh;
+    max-width: 177.78vh;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    overflow: hidden;
+}
+
+img {
+    width: 100%;
+}
+
+.hidden {
+    display: none;
+}
+
+
+
+
+/* -------------------- GAME ELEMENTS ------------------- */
+
+/* CLOUDS */
+
+#thought_1 {
+    opacity: 0;
+    animation-name: fade_in_kf;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-delay: 2s;
+}
+
+#thought_2 {
+    opacity: 0;
+    animation-name: fade_in_kf;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-delay: 1.5s;
+}
+
+#thought_3 {
+    opacity: 0;
+    animation-name: fade_in_kf;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-delay: 1s;
+}
+
+#thought_4 {
+    opacity: 0;
+    animation-name: fade_in_kf;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-delay: 0.5s;
+}
+
+
+/* DREAMS */
+
+.dreams {
+    opacity: 0;
+    animation-name: fade_in_kf;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in;
+    animation-delay: 2.5s;
+}
+
+.dream {
+    position: absolute;
+    width: 18%;
+    height: 24%;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.locked .dream {
+    background-image: url("elements/mouse.svg");
+}
+
+#dream_1 {
+    animation: dream_1_kf 4s infinite linear;
+}
+
+@keyframes dream_1_kf {
+    0% {
+        left: 24%;
+        top: 13%;
+    }
+
+    25% {
+        left: 25%;
+        top: 14%;
+    }
+
+    50% {
+        left: 24%;
+        top: 15%;
+    }
+
+    75% {
+        left: 23%;
+        top: 14%;
+    }
+
+    100% {
+        left: 24%;
+        top: 13%;
+    }
+}
+
+#dream_2 {
+    animation-name: dream_2_kf;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes dream_2_kf {
+    0% {
+        left: 45%;
+        top: 13%;
+    }
+
+    25% {
+        left: 44%;
+        top: 15%;
+    }
+
+    50% {
+        left: 43%;
+        top: 14%;
+    }
+
+    75% {
+        left: 44%;
+        top: 12%;
+    }
+
+    100% {
+        left: 45%;
+        top: 13%;
+    }
+}
+
+#dream_3 {
+    animation-name: dream_3_kf;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes dream_3_kf {
+    0% {
+        left: 64%;
+        top: 14%;
+    }
+
+    25% {
+        left: 63%;
+        top: 13%;
+    }
+
+    50% {
+        left: 64%;
+        top: 16%;
+    }
+
+    75% {
+        left: 65%;
+        top: 15%;
+    }
+
+    100% {
+        left: 64%;
+        top: 14%;
+    }
+}
+
+.mouse {
+    background-image: url(elements/mouse.svg);
+}
+
+.carrot {
+    background-image: url(elements/carrot.svg);
+}
+
+.lollipop {
+    background-image: url(elements/lollipop.svg);
+}
+
+.sun {
+    background-image: url(elements/sun.svg);
+}
+
+
+/* ELEPHANTS */
+
+#elephant {
+    position: absolute;
+    left: 59%;
+    top: 50%;
+    width: 20%;
+    height: 33%;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    animation-name: elephant_bobbing;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+}
+
+
+
+@keyframes elephant_bobbing {
+    0% {
+        top: 51%;
+    }
+
+    50% {
+        top: 51%;
+    }
+
+    100% {
+        top: 50.5%;
+    }
+}
+
+.e_awake_happy {
+    background-image: url(elements/e_awake_happy.svg);
+}
+
+.e_awake_unhappy {
+    background-image: url(elements/e_awake_unhappy.svg);
+}
+
+.e_asleep_neutral {
+    background-image: url(elements/e_asleep_neutral.svg);
+}
+
+.e_asleep_happy {
+    background-image: url(elements/e_asleep_happy.svg);
+}
+
+.e_asleep_unhappy {
+    background-image: url(elements/e_asleep_unhappy.svg);
+}
+
+/* ------------------------- UI ------------------------- */
+
+#game_ui {
+    animation-name: fade_pulse;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards;
+    animation-direction: alternate;
+}
+
+/* POINTS */
+
+.points {
+    position: absolute;
+    top: 18%;
+    left: 0;
+    opacity: 0.9;
+    font-weight: bold;
+    color: #3f445d;
+    display: inline-block;
+    width: 48%;
+    text-align: right;
+}
+
+#points_bar {
+    position: absolute;
+    top: 2%;
+    width: 13%;
+    left: 85%;
+    opacity: 0.9;
+}
+
+.end_points {
+    font-size: 3em;
+    position: absolute;
+    top: 55%;
+    left: 57%;
+    color: #CCCCCC;
+    white-space: nowrap;
+}
+
+
+/* TIMER */
+
+#time_bar {
+    position: absolute;
+    top: 2%;
+    width: 13%;
+    left: 71%;
+    opacity: 0.9;
+}
+
+
+/* ENERGY */
+
+.energy {
+    position: absolute;
+    top: 2%;
+    width: 7%;
+}
+
+#energy_0 {
+    left: 2%;
+}
+
+#energy_1 {
+    left: 10%;
+}
+
+#energy_2 {
+    left: 18%;
+}
+
+@keyframes fade_pulse {
+    0% {
+        opacity: 0.9;
+    }
+
+    100% {
+        opacity: 0.7;
+    }
+}
+
+
+/* -------------------- INFO SCREENS -------------------- */
+
+/* NAVIGATION BUTTONS */
+
+.button {
+    width: 25%;
+    cursor: pointer;
+}
+
+.button_play {
+    position: absolute;
+    top: 30%;
+    left: 37.5%;
+    animation-duration: 1.5s;
+}
+
+.button_settings {
+    position: absolute;
+    top: 50%;
+    left: 37.5%;
+    animation-duration: 1.7s;
+}
+
+.button_quit {
+    position: absolute;
+    top: 70%;
+    left: 37.5%;
+    animation-duration: 2s;
+}
+
+.gameover_button_quit {
+    position: absolute;
+    top: 70%;
+    left: 37.5%;
+    animation-duration: 2s;
+}
+
+.gameover_button_play_again {
+    position: absolute;
+    width: 32%;
+    top: 70%;
+    left: 65%;
+    animation-duration: 2s;
+}
+
+.levelcomplete_button_play_again {
+    position: absolute;
+    width: 32%;
+    top: 70%;
+    left: 65%;
+    animation-duration: 2s;
+}
+
+.levelcomplete_button_quit {
+    position: absolute;
+    top: 70%;
+    left: 37.5%;
+    animation-duration: 2s;
+}
+
+.button_back {
+
+    position: absolute;
+    top: 70%;
+    left: 37.5%;
+    animation-duration: 2s;
+}
+
+
+/* MUSIC BUTTONS */
+
+.button_effects.muted .muted {
+    display: block;
+}
+
+.button_effects.unmuted .unmuted {
+    display: block;
+}
+
+.button_effects {
+    position: absolute;
+    top: 50%;
+    left: 37.5%;
+    animation-duration: 1.7s;
+}
+
+.button_effects .icon {
+    display: none;
+    position: absolute;
+    top: 19%;
+    left: 8%;
+    width: 21%;
+}
+
+.button_music.muted .muted {
+    display: block;
+}
+
+.button_music.unmuted .unmuted {
+    display: block;
+}
+
+.button_music {
+    position: absolute;
+    top: 30%;
+    left: 37.5%;
+    animation-duration: 1.5s;
+}
+
+.button_music .icon {
+    display: none;
+    position: absolute;
+    top: 19%;
+    left: 8%;
+    width: 21%;
+}
+
+
+/* LEVEL COMPLETE */
+
+#levelcomplete_background {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+/* GAME OVER */
+
+#gameover_background {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+
+/* ----------------- GENERAL ANIMATIONS ----------------- */
+
+/* FADE OUT */
+
+.fade_out {
+    animation-name: fade_out_kf;
+    animation-duration: 0.5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+.fade_out_slow {
+    animation-name: fade_out_kf;
+    animation-duration: 3.5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in;
+}
+
+@keyframes fade_out_kf {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+
+/* FADE IN */
+
+.fade_in {
+    animation-name: fade_in_kf;
+    animation-duration: 0.5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+.fade_in_slow {
+    animation-name: fade_in_kf;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in;
+}
+
+@keyframes fade_in_kf {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+
+/* PULSE */
+
+.pulse {
+    animation-name: size_pulse_kf;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in;
+}
+
+@keyframes size_pulse_kf {
+    0% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(1.03);
+    }
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+#timer {
+    position: absolute;
+    top: 18%;
+    left: 0;
+    opacity: 0.9;
+    font-weight: bold;
+    color: #3f445d;
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+}
+
+
+/* OUT */
+
+/*#game {*/
+/*width: 100%;*/
+/*height: 100%;*/
+/*position: relative;*/
+/*}*/

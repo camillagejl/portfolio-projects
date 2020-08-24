@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="DA">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <meta name="robots" content="noindex">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="elements/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="elements/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="elements/favicon-16x16.png">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+
+    <title>Sex &amp; Samfund - Gruppe 12</title>
+</head>
+
+<body>
+    <div id="screen">
+        <div id="screen_background"></div>
+
+        <div id="game_screen">
+
+            <div id="character"></div>
+            <div id="mouth" class="mouth_3"></div>
+            <div id="table"></div>
+            <div id="triangle_1" class="triangle"></div>
+            <div id="triangle_2" class="triangle"></div>
+            <div id="triangle_3" class="triangle"></div>
+            <div id="triangle_4" class="triangle"></div>
+
+            <div id="mom_bubble_container" class="mom_start"></div>
+            <div id="bubbles">
+                <div id="bubble_container_1" class="bubble_container click bubble_1"></div>
+                <div id="bubble_container_2" class="bubble_container click bubble_1"></div>
+                <div id="bubble_container_3" class="bubble_container click bubble_1"></div>
+                <div id="bubble_container_4" class="bubble_container click bubble_1"></div>
+            </div>
+            <div id="house"></div>
+            <div id="bus" class="bus_1"></div>
+            <div id="snak_o_meter" class="points_6"></div>
+        </div>
+
+
+        <div id="pop_screen"></div>
+        <div id="about_screen" class="hidden">
+            <div id="about_text"></div>
+            <div id="play_boy" class="click button"></div>
+            <div id="play_girl" class="click button"></div>
+        </div>
+
+
+        <div id="start_elements" class="hidden">
+            <div id="title"></div>
+            <div id="play_but" class="click button"></div>
+            <div id="settings_but" class="click button"></div>
+            <div id="visit_but" class="click logo_link button"><a href="http://privatsnak.dk/" target="_blank"></a></div>
+            <div class="logo click logo_link"><a href="http://privatsnak.dk/" target="_blank"></a></div>
+        </div>
+
+
+        <div id="settings_elements" class="hidden">
+            <div id="settings"></div>
+            <div id="music" class="click on button"></div>
+            <div id="sfx" class="click on button"></div>
+            <div id="settings_exit" class="click button"></div>
+            <div class="logo click logo_link"><a href="http://privatsnak.dk/" target="_blank"></a></div>
+        </div>
+
+
+        <div id="gameover_elements" class="hidden">
+            <div id="gameover_text"></div>
+            <div id="gameover_play_again" class="click button"></div>
+            <div id="gameover_visit_but" class="click logo_link button"><a href="http://privatsnak.dk/" target="_blank"></a></div>
+        </div>
+
+        <div id="levelcomplete_elements" class="hidden">
+            <div id="levelcomplete_text"></div>
+            <div id="levelcomplete_play_again" class="click button"></div>
+            <div id="levelcomplete_visit_but" class="click logo_link button"><a href="http://privatsnak.dk/" target="_blank"></a></div>
+
+        </div>
+    </div>
+
+    <div id="audio">
+        <audio src="elements/bgmusik.mp3" id="myMusic"></audio>
+        <audio src="elements/click.mp3" id="click"></audio>
+        <audio src="elements/morgisper.mp3" id="sfx1"></audio>
+        <audio src="elements/drenghmm.mp3" id="sfx2"></audio>
+<!--        <audio src="elements/bus1.mp3" id="gosound"></audio>-->
+        <audio src="elements/bus2forkortetv2.mp3" id="winsound"></audio>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

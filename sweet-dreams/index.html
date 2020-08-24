@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="EN">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Courgette" rel="stylesheet">
+    <meta name="robots" content="noindex">
+
+    <link rel="apple-touch-icon" sizes="57x57" href="icons/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="icons/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="icons/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="icons/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="icons/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="icons/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="icons/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="icons/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="icons/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="icons/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="icons/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="icons/favicon-16x16.png">
+    <link rel="manifest" href="icons/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="icons/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+    <title>Sweet Dreams</title>
+</head>
+
+<body>
+    <div id="screen">
+        <div id="menu_background">
+            <img src="elements/background_title.svg" alt="Title background">
+        </div>
+        <div id="game" class="hidden">
+            <img id="game_background" class="full-screen" src="elements/background_game.svg" alt="Game background">
+            <div id="game_elements">
+                <div id="elephant" class="e_asleep_neutral"></div>
+                <div class="dreams">
+                    <div id="dream_1" class="dream"></div>
+                    <div id="dream_2" class="dream"></div>
+                    <div id="dream_3" class="dream"></div>
+                </div>
+                <div id="thoughts">
+                    <div id="thought_1">
+                        <img src="elements/cloud.svg" alt="Cloud" style="position: absolute; width: 4%; left: 54%; top: 39%;">
+                    </div>
+                    <div id="thought_2">
+                        <img src="elements/cloud.svg" alt="Cloud" style="position: absolute; width: 3%; left: 58%; top: 44%;">
+                    </div>
+                    <div id="thought_3">
+                        <img src="elements/cloud.svg" alt="Cloud" style="position: absolute; width: 2%; left: 62%; top: 47%;">
+                    </div>
+                    <div id="thought_4">
+                        <img src="elements/cloud.svg" alt="Cloud" style="position: absolute; width: 1%; left: 65%; top: 49%;">
+                    </div>
+                </div>
+            </div>
+            <div id="game_ui">
+                <div id="energy_0" class="energy hidden">
+                    <img src="elements/mouse.svg" alt="Life">
+                </div>
+                <div id="energy_1" class="energy hidden">
+                    <img src="elements/mouse.svg" alt="Life">
+                </div>
+                <div id="energy_2" class="energy hidden">
+                    <img src="elements/mouse.svg" alt="Life">
+                </div>
+                <div id="points_bar">
+                    <img src="elements/points.svg" alt="Points">
+                    <div class="points"></div>
+                </div>
+                <div id="time_bar">
+                    <img src="elements/timer.svg" alt="Timer">
+                    <div id="timer">
+                    </div>
+                </div>
+            </div>
+            <div id="sounds">
+                <iframe src="elements/silence.mp3" allow="autoplay" id="audio" style="display:none"></iframe>
+                <audio src="elements/125_full_lullaby-music-box_0102_preview.mp3" id="lullaby" autoplay loop></audio>
+                <!--<audio loop>-->
+                    <!--<iframe src="elements/125_full_lullaby-music-box_0102_preview.mp3" allow="autoplay" id="music" style="display:none"></iframe>-->
+                <!--</audio>-->
+                <audio src="elements/trumpet.mp3" id="trumpet"></audio>
+                <audio src="elements/trumpet_long.mp3" id="trumpet_long"></audio>
+                <audio src="elements/mouse_sound.mp3" id="mouse_sound"></audio>
+                <audio src="elements/button_sound.mp3" id="button_sound"></audio>
+                <audio src="elements/positive_sound.mp3" id="positive_sound"></audio>
+                <audio src="elements/levelcomplete_sound.mp3" id="levelcomplete_sound"></audio>
+            </div>
+        </div>
+        <div id="start" class="hidden">
+            <div class="button button_play pulse">
+                <img src="elements/button_play.svg" alt="Play">
+            </div>
+            <div class="button button_settings pulse">
+                <img src="elements/button_settings.svg" alt="Settings">
+            </div>
+            <div class="button button_quit pulse">
+                <img src="elements/button_quit.svg" alt="Quit">
+            </div>
+        </div>
+        <div id="settings" class="hidden">
+            <div class="button button_music pulse">
+                <img src="elements/button_music.svg" alt="Music">
+                <div class="icon muted">
+                    <img src="elements/muted.svg" alt="Muted">
+                </div>
+                <div class="icon unmuted">
+                    <img src="elements/unmuted.svg" alt="Unmuted">
+                </div>
+            </div>
+            <div class="button button_effects pulse">
+                <img src="elements/button_effects.svg" alt="Effects">
+                <div class="icon muted">
+                    <img src="elements/muted.svg" alt="Muted">
+                </div>
+                <div class="icon unmuted">
+                    <img src="elements/unmuted.svg" alt="Unmuted">
+                </div>
+            </div>
+            <div class="button button_back pulse">
+                <img src="elements/button_back.svg" alt="Back">
+            </div>
+            <div class="muted">
+                <img src="elements/muted.svg" alt="Muted">
+            </div>
+            <div class="unmuted">
+                <img src="elements/unmuted.svg" alt="Unmuted">
+            </div>
+        </div>
+        <div id="gameover" class="hidden">
+            <div id="gameover_background">
+                <img src="elements/background_game_over.svg" alt="Game over">
+            </div>
+            <div class="button gameover_button_play_again">
+                <img src="elements/button_play_again.svg" alt="Play again">
+            </div>
+            <div class="button gameover_button_quit">
+                <img src="elements/button_quit.svg" alt="Back">
+            </div>
+            <div class="end_points">
+                Points: <span class="points_game_over"></span>
+            </div>
+        </div>
+        <div id="levelcomplete" class="hidden">
+            <div id="levelcomplete_background">
+                <img src="elements/background_level_complete.svg" alt="Level complete">
+            </div>
+            <div class="button levelcomplete_button_play_again">
+                <img src="elements/button_play_again.svg" alt="Play again">
+            </div>
+            <div class="button levelcomplete_button_quit">
+                <img src="elements/button_quit.svg" alt="Back">
+            </div>
+            <div class="end_points">
+                Points: <span class="points_level_complete"></span>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

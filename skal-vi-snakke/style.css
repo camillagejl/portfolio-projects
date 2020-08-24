@@ -1,0 +1,766 @@
+/* HTML */
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color: darkgrey;
+}
+
+#screen {
+    /* @see https://stackoverflow.com/a/20593342/1155596 */
+    width: 100vw;
+    height: 56.25vw;
+    max-height: 100vh;
+    max-width: 177.78vh;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    overflow: hidden;
+}
+
+#screen_background {
+    height: 100%;
+    width: 100%;
+    background-image: url("elements/game_background.svg");
+    background-size: cover;
+    opacity: 0.8;
+}
+
+img {
+    width: 100%;
+}
+
+/* MAIN CLASSES */
+
+.hidden {
+    display: none;
+}
+
+.click {
+    cursor: pointer;
+}
+
+/* STATIC GAME ELEMENTS */
+
+#character {
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 60%;
+    width: 30%;
+    position: absolute;
+    top: 15%;
+    left: 35%;
+}
+
+.boy {
+    background-image: url(elements/character_boy.svg);
+}
+
+.girl {
+    background-image: url(elements/character_girl.svg);
+}
+
+#table {
+    background-image: url(elements/table.svg);
+    background-size: contain;
+    height: 40%;
+    width: 80%;
+    position: absolute;
+    bottom: -1%;
+    left: 10%;
+    background-repeat: no-repeat;
+}
+
+.triangle {
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 6%;
+    width: 6%;
+    position: absolute;
+}
+
+#triangle_1 {
+    background-image: url(elements/triangle_left.svg);
+    top: 35%;
+    left: 25%;
+}
+
+#triangle_2 {
+    background-image: url(elements/triangle_left.svg);
+    top: 62%;
+    left: 25%;
+}
+
+#triangle_3 {
+    background-image: url(elements/triangle_right.svg);
+    top: 35%;
+    right: 25%;
+}
+
+#triangle_4 {
+    background-image: url(elements/triangle_right.svg);
+    top: 62%;
+    right: 25%;
+}
+
+/* MOUTHS */
+
+#mouth {
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 5%;
+    width: 10%;
+    position: absolute;
+    top: 42%;
+    left: 44%;
+}
+
+.mouth_1 {
+    background-image: url(elements/mouth_1.svg);
+}
+
+.mouth_2 {
+    background-image: url(elements/mouth_2.svg);
+}
+
+.mouth_3 {
+    background-image: url(elements/mouth_3.svg);
+}
+
+.mouth_4 {
+    background-image: url(elements/mouth_4.svg);
+}
+
+.mouth_5 {
+    background-image: url(elements/mouth_5.svg);
+}
+
+/* MOM BUBBLES */
+
+#mom_bubble_container {
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 15%;
+    width: 36%;
+    position: absolute;
+    top: 0;
+    left: 32%;
+}
+
+.mom_start {
+    background-image: url(elements/mom_start.svg);
+}
+
+.mom_bubble_1 {
+    background-image: url(elements/mom_1.svg);
+}
+
+.mom_bubble_2 {
+    background-image: url(elements/mom_2.svg);
+}
+
+.mom_bubble_3 {
+    background-image: url(elements/mom_3.svg);
+}
+
+
+/* TEXT BUBBLES */
+
+.bubble_container {
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 20%;
+    width: 28%;
+    position: absolute;
+}
+
+#bubble_container_1 {
+    top: 16%;
+    left: 7%;
+}
+
+#bubble_container_2 {
+    top: 43%;
+    left: 7%;
+}
+
+#bubble_container_3 {
+    top: 16%;
+    right: 7%;
+}
+
+#bubble_container_4 {
+    top: 43%;
+    left: 65%;
+}
+
+.bubble_1 {
+    background-image: url("elements/bubble_1.svg");
+}
+
+.bubble_2 {
+    background-image: url("elements/bubble_2.svg");
+}
+
+.bubble_3 {
+    background-image: url("elements/bubble_3.svg");
+}
+
+.bubble_4 {
+    background-image: url("elements/bubble_4.svg");
+}
+
+.bubble_5 {
+    background-image: url("elements/bubble_5.svg");
+}
+
+.bubble_6 {
+    background-image: url("elements/bubble_6.svg");
+}
+
+.bubble_7 {
+    background-image: url("elements/bubble_7.svg");
+}
+
+.bubble_8 {
+    background-image: url("elements/bubble_8.svg");
+}
+
+.bubble_9 {
+    background-image: url("elements/bubble_9.svg");
+}
+
+.bubble_10 {
+    background-image: url("elements/bubble_10.svg");
+}
+
+.bubble_11 {
+    background-image: url("elements/bubble_11.svg");
+}
+
+.bubble_12 {
+    background-image: url("elements/bubble_12.svg");
+}
+
+.bubble_13 {
+    background-image: url("elements/bubble_13.svg");
+}
+
+.bubble_14 {
+    background-image: url("elements/bubble_14.svg");
+}
+
+.bubble_15 {
+    background-image: url("elements/bubble_15.svg");
+}
+
+.bubble_16 {
+    background-image: url("elements/bubble_16.svg");
+}
+
+
+/* TIMER */
+
+#house {
+    background-image: url(elements/house.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 23%;
+    width: 30%;
+    position: absolute;
+    bottom: 2%;
+    left: 1%;
+}
+
+#bus {
+    background-image: url(elements/bus.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 9%;
+    width: 12%;
+    position: absolute;
+    bottom: 3%;
+}
+
+.bus_1 {
+    left: 2%;
+}
+
+.bus_2 {
+    left: 3%;
+}
+
+.bus_3 {
+    left: 6%;
+}
+
+.bus_4 {
+    left: 9%;
+}
+
+.bus_5 {
+    left: 12%;
+}
+
+.bus_6 {
+    left: 15%;
+}
+
+.bus_7 {
+    left: 18%;
+}
+
+
+/* SNAK-O-METER */
+
+#snak_o_meter {
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 55%;
+    width: 5%;
+    position: absolute;
+    top: 10%;
+    right: 0.5%;
+}
+
+.points_0 {
+    background-image: url(elements/points_0.svg);
+}
+
+.points_1 {
+    background-image: url(elements/points_1.svg);
+}
+
+.points_2 {
+    background-image: url(elements/points_2.svg);
+}
+
+.points_3 {
+    background-image: url(elements/points_3.svg);
+}
+
+.points_4 {
+    background-image: url(elements/points_4.svg);
+}
+
+.points_5 {
+    background-image: url(elements/points_5.svg);
+}
+
+.points_6 {
+    background-image: url(elements/points_6.svg);
+}
+
+.points_7 {
+    background-image: url(elements/points_7.svg);
+}
+
+.points_8 {
+    background-image: url(elements/points_8.svg);
+}
+
+.points_9 {
+    background-image: url(elements/points_9.svg);
+}
+
+.points_10 {
+    background-image: url(elements/points_10.svg);
+}
+
+.points_11 {
+    background-image: url(elements/points_11.svg);
+}
+
+.points_12 {
+    background-image: url(elements/points_12.svg);
+}
+
+/*ANNALEES KODE*/
+
+.fade_out {
+    animation-name: fade_out_kf;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+
+@keyframes fade_out_kf {
+
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+.fade_in {
+    animation-name: fade_in_kf;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+
+@keyframes fade_in_kf {
+
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+/* POP SCREENS */
+
+#pop_screen {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 85%;
+    background-image: url(elements/start_background.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.logo {
+    position: absolute;
+    top: 10%;
+    left: 78%;
+    width: 23%;
+    height: 23%;
+    background-image: url(elements/privatsnak_logo.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.logo_link a {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+}
+
+
+/* START */
+
+#start_elements {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+}
+
+#title {
+    position: absolute;
+    top: 10%;
+    left: 25%;
+    width: 50%;
+    height: 15%;
+    background-image: url("elements/skal_vi_snakke.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.button {
+    position: absolute;
+    width: 30%;
+    height: 13%;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.button:hover {
+    width: 34%;
+    height: 17%;
+}
+
+#play_but {
+    top: 30%;
+    left: 35%;
+    background-image: url(elements/start_button.svg);
+}
+
+#play_but:hover {
+    left: 33%;
+}
+
+#settings_but {
+    position: absolute;
+    top: 46%;
+    left: 35%;
+    background-image: url(elements/settings_button.svg);
+}
+
+#settings_but:hover {
+    left: 33%;
+    top: 45%;
+}
+
+#visit_but {
+    position: absolute;
+    top: 62%;
+    left: 35%;
+    background-image: url(elements/visit_button.svg);
+}
+
+#visit_but:hover {
+    left: 33%;
+}
+
+
+/* SETTINGS */
+
+#settings {
+    position: absolute;
+    top: 10%;
+    left: 25%;
+    width: 50%;
+    height: 15%;
+    background-image: url("elements/indstillinger.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#settings_elements {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+}
+
+#music {
+    position: absolute;
+    top: 30%;
+    left: 35%;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#music:hover {
+    left: 33%;
+}
+
+#music.on {
+    background-image: url(elements/music_on.svg);
+}
+
+#music.off {
+    background-image: url(elements/music_off.svg);
+}
+
+#sfx {
+    position: absolute;
+    top: 46%;
+    left: 35%;
+    background-image: url(elements/effects_on.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#sfx:hover {
+    left: 33%;
+    top: 45%;
+}
+
+#sfx.on {
+    background-image: url(elements/effects_on.svg);
+}
+
+#sfx.off {
+    background-image: url(elements/effects_off.svg);
+}
+
+#settings_exit {
+    position: absolute;
+    top: 62%;
+    left: 35%;
+    background-image: url(elements/back_button.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#settings_exit:hover {
+    left: 33%;
+}
+
+/* ABOUT */
+
+#about_screen {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+}
+
+#about_text {
+    position: absolute;
+    top: 13%;
+    left: 10%;
+    width: 80%;
+    height: 70%;
+    background-image: url(elements/intro_text.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#play_boy {
+
+    position: absolute;
+    top: 70%;
+    left: 15%;
+    background-image: url(elements/play_boy_buton.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+
+}
+
+#play_boy:hover {
+    left: 13%;
+}
+
+#play_girl {
+
+    position: absolute;
+    top: 70%;
+    left: 55%;
+    background-image: url(elements/play_girl_button.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+
+}
+
+#play_girl:hover {
+    left: 53%;
+}
+
+/* GAME OVER*/
+
+#gameover_elements {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+}
+
+#gameover_text {
+    position: absolute;
+    top: 13%;
+    left: 10%;
+    width: 80%;
+    height: 70%;
+    background-image: url(elements/gameover_text.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#gameover_play_again {
+    top: 70%;
+    left: 15%;
+    background-image: url(elements/play_again_button.svg);
+}
+
+#gameover_play_again:hover {
+    left: 13%;
+}
+
+#gameover_visit_but {
+    top: 70%;
+    left: 55%;
+    background-image: url(elements/visit_button.svg);
+}
+
+#gameover_visit_but:hover {
+    left: 53%;
+}
+
+
+/* LEVEL COMPLETE */
+
+#levelcomplete_elements {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+}
+
+#levelcomplete_text {
+    position: absolute;
+    top: 13%;
+    left: 10%;
+    width: 80%;
+    height: 70%;
+    background-image: url(elements/level_complete_text.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#levelcomplete_play_again {
+    top: 70%;
+    left: 15%;
+    background-image: url(elements/play_again_button.svg);
+}
+
+#levelcomplete_play_again:hover {
+    left: 13%;
+}
+
+#levelcomplete_visit_but {
+    top: 70%;
+    left: 55%;
+    background-image: url(elements/visit_button.svg);
+}
+
+#levelcomplete_visit_but:hover {
+    left: 53%;
+}
+
+
+/* wot */
+
+#levelcomplete_screen {
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(elements/vinderskaerm.svg);
+    background-size: 100%;
+
+}
+
+#visit_us3 {
+
+    position: absolute;
+    top: 70%;
+    left: 40%;
+    width: 15%;
+    height: 10%;
+    font-family: monospace;
+    text-align: center;
+    padding-top: 3%;
+
+
+
+}
+
+
+
+
+/*ANNALEES KODE SLUT*/
