@@ -1,0 +1,143 @@
+html {
+    background-color: aliceblue;
+    font-family: 'Open Sans', sans-serif;
+    color: #1f1f1f;
+    overflow: -moz-scrollbars-vertical;
+    overflow-y: scroll;
+}
+
+body {
+    margin: auto;
+}
+
+p {
+    color: black;
+}
+
+header {
+    background-color: #01bace;
+    width: 1000px;
+    margin: auto;
+    border: 0px;
+    padding: 0px;
+}
+
+h1 {
+    margin-top: 0px;
+    margin-bottom: 20px;
+}
+
+h2 {
+    margin: 5px 0px;
+}
+
+.container img {
+    width: 100%;
+    border: 5px solid #fffddf;
+}
+
+.storyboard img {
+    width: 31%;
+}
+
+#dokumentation h2 {
+    margin-top: 35px;
+}
+
+.container {
+    background-color: #01bace;
+    height: auto;
+    width: 900px;
+    margin: auto;
+    padding: 50px;
+}
+
+.button {
+    display: inline-block;
+    border: 1px black solid;
+    background-color: rgba(163, 188, 255, 0.71);
+    padding: 20px;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+
+/* Fonts */
+
+a {
+    text-decoration: none;
+    font-size: 24px;
+    color: #470d60;
+
+}
+
+ul {
+    margin: 0px 0px 10px 0px;
+}
+
+
+
+
+
+/* MENU */
+
+.menu {
+    text-align: right;
+    position: fixed;
+    right: 0;
+    top: 0;
+}
+
+.menu_button {
+    position: relative;
+    display: inline-block;
+    /*padding: 0;*/
+    background: #b57db7;
+    padding: 8px 16px;
+}
+
+.menu_button:hover {
+    background: #c690c7;
+}
+
+.menu_icon {
+    color: #ffffff;
+    width: 32px;
+    height: 32px;
+}
+
+.menu_dropdown {
+    display: none;
+    position: absolute;
+    right: 0;
+    list-style: none;
+    padding: 8px 0 16px 16px;
+    margin: 0;
+}
+
+.menu_button:hover > .menu_dropdown {
+    display: block;
+}
+
+.menu_item {
+    background: #ccd1e6;
+    white-space: nowrap;
+}
+
+.menu_item a {
+    font-size: 1rem;
+    display: block;
+    padding: 12px 24px;
+    color: #6a6a6a;
+    border-right: 5px solid transparent;
+}
+
+.menu_item a:hover {
+    background: rgba(255, 255, 255, 0.2);
+    color: #393939;
+    border-color: #a389e8;
+}
+
+.wrapper img {
+    width: 48%;
+}

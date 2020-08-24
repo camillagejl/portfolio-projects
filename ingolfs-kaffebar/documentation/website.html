@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="DA">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex">
+    <link rel="stylesheet" href="stylesheet.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <title>Gruppe 20 Dokumentation</title>
+
+
+    <nav class="menu">
+        <div class="menu_button">
+            <svg class="menu_icon" viewBox="0 0 20 20">
+                <path d="M0 3h20v2h-20v-2zM0 9h20v2h-20v-2zM0 15h20v2h-20v-2z"></path>
+            </svg>
+            <ul class="menu_dropdown">
+                <li class="menu_item">
+                    <a href="index.html">
+                        Forside
+                    </a>
+                </li>
+                <li class="menu_item">
+                    <a href="koncept.html">
+                        Koncept
+                    </a>
+                </li>
+                <li class="menu_item">
+                    <a href="video.html">
+                        Video
+                    </a>
+                </li>
+                <li class="menu_item">
+                    <a href="stillfotos.html">
+                        Stillfotos
+                    </a>
+                </li>
+                <li class="menu_item">
+                    <a href="website.html" style="background-color: #e6e9f4;">
+                        Website
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</head>
+
+<body>
+
+    <header>
+        <a href="index.html"><img src="ingolfs.png" alt="Ingolfs Kaffebar"></a>
+    </header>
+    <div class="container">
+        <div id="website">
+            <h1>Re-design af website</h1>
+            <div id="html">
+                <h2>HTML-eksempel</h2>
+                <p>
+                    På hjemmesiden har vi flere steder brugt en stribe billeder fra caféen til at vise stemningen. Her har vi bl.a. brugt mediequeries til at definere hvordan billederne skal vises på forskellige størrelser skærme:
+                </p>
+                <p>
+                    På skærme over 1200px står de 5 billeder i én række med en bredde på 1200px.
+                </p>
+                <p>
+                    På skærme mindre end 1199px bliver bredden på billede-boksen begrænset til 800px, så billederne står i to rækker på 3 og 2 billeder.
+                </p>
+                <p>
+                    På skærme under 500px er flex-basis sat til 100px for at sørge for, at siden ikke wrapper for tidligt og sender billederne under hinanden. Dvs. at den viser billederne o to rækker af to, og med det sidste billede sat til 100% fylder det nederste altså hele bredden.
+                </p>
+                <p>
+                    Derudover er hvert billede i en .image-div med flex-basis og alle disse div'er er i en .image-wrapper-div med flex. Marginerne ændres også efter skærmstørrelse.
+                </p>
+                <a href="eksempel_html.JPG" target="_blank">
+                    <img src="eksempel_html.JPG" alt="Eksempel på HTML" style="width: 50%;">
+                </a>
+                <a href="eksempel_css.JPG" target="_blank">
+                    <img src="eksempel_css.JPG" style="width: 45%;">
+                </a>
+                <a href="eksempel_fem.JPG" target="_blank">
+                    <img src="eksempel_fem.JPG">
+                </a>
+                <a href="eksempel_tre.JPG" target="_blank">
+                    <img src="eksempel_tre.JPG" style="width: 45%;">
+                </a>
+                <a href="eksempel_to.JPG" target="_blank">
+                    <img src="eksempel_to.JPG" style="width: 45%;">
+                </a>
+            </div>
+
+            <h2>Analyse af eksisterende website</h2>
+            <br>
+            <a href="fem_sek.jpg" target="_blank">
+                <img src="fem_sek.jpg">
+            </a>
+            <a href="stiletyle.jpg" target="_blank">
+                <img src="stiletyle.jpg">
+            </a>
+            <a href="fotostil.jpg" target="_blank">
+                <img src="fotostil.jpg">
+            </a>
+            <a href="bert_1.jpg" target="_blank">
+                <img src="bert_1.jpg" alt="Bert Test pt1">
+            </a>
+            <a href="bert_2.jpg" target="_blank">
+                <img src="bert_2.jpg">
+            </a>
+            <h2>Styletile til nyt site</h2>
+            <a href="styletilefinal.jpg" target="_blank">
+                <img src="styletilefinal.jpg" alt="Styletile">
+            </a>
+
+            <div class="wrapper">
+                <h2>Wireframe</h2>
+                <h3>Desktop wireframe</h3>
+                <a href="Wireframe_forside.jpg" target="_blank">
+                    <img src="Wireframe_forside.jpg" alt="Wireframe - forside">
+                </a>
+                <a href="Wireframe_underside1.jpg" target="_blank">
+                    <img src="Wireframe_underside1.jpg" alt="Wireframe - underside">
+                </a>
+                <h3>Mobil wireframe</h3>
+                <a href="mobil_wireframe_forside.jpg" target="_blank">
+                    <img src="mobil_wireframe_forside.jpg" alt="Mobil wireframe - forside">
+                </a>
+                <a href="mobil_wireframe_underside.jpg" target="_blank">
+                    <img src="mobil_wireframe_underside.jpg" alt="Mobil wireframe - underside">
+                </a>
+            </div>
+            <h2>Layoutdiagram</h2>
+            <br>
+            <div class="wrapper">
+                <a href="layout_1.jpg" target="_blank">
+                    <img src="layout_1.jpg" alt="Layoutdiagram pt1">
+                </a>
+                <a href="layout_2.jpg" target="_blank">
+                    <img src="layout_2.jpg" alt="Layoutdiagram pt2">
+                </a>
+                <a href="layout_3.jpg" target="_blank">
+                    <img src="layout_3.jpg" alt="Layoutdiagram pt3">
+                </a>
+                <a href="layout_4.jpg" target="_blank">
+                    <img src="layout_4.jpg" alt="Layoutdiagram pt4">
+                </a>
+                <a href="layout_5.jpg" target="_blank">
+                    <img src="layout_5.jpg" alt="Layoutdiagram pt5">
+                </a>
+                <a href="layout_6.jpg" target="_blank">
+                    <img src="layout_6.jpg" alt="Layoutdiagram pt6">
+                </a>
+            </div>
+            <h2>
+                Lightouse-analyse
+            </h2>
+            <p>
+                Vores lighthouse-analyse af det nye website var overvejende positiv. Derfor har vi simpelthen kun fundet en enkelt ting, vi kunne rette. Resultaterne af analysen forblev det samme.
+            </p>
+            <a href="lighthouse.JPG"><img src="lighthouse.JPG" alt="Lighthouse-analyse" style="width: auto;"></a>
+            <p>
+                Vores billeder er fra start rimeligt optimerede, bortset fra vores splashbillede, som var PNG. Dette har vi lavet om til JPG og sparet en hel del plads.
+            </p>
+            <a href="lighthouse_1.JPG"><img src="lighthouse_1.JPG" alt="Billedanalyse" style="width: auto"></a>
+            <a href="lighthouse_2.JPG"><img src="lighthouse_2.JPG" alt="Billedeanalyse" style="width: auto;"></a>
+            <h2>5 sekunders test af ny side</h2>
+            <strong>Hvad handler dette site om?</strong>
+            <p>
+                Noget cafe værk, det ligner noget cafe, evt noget jazz klub, noget med musik, kaffe, kage "det kan jeg ikke huske, eller er det ingolfskaffebar?"
+            </p>
+            <strong>Hvad er det mest i øjenfaldende?</strong>
+            <p>
+                Lyserød, bygning, vinduer, overskrift helt oppe i venstre hjørne, alt efter det er et blur, farverne, billederne, layoutet<br>
+                Det mest iøjenfaldende var vores splash billede, hvilket er naturligt, det da hovedsageligt er det man kan se når man kommer ind på sitet.
+            </p>
+            <strong>Ét beskrivende ord:</strong>
+            <p>
+                Kreativt, playfull, moderne, flot
+            </p>
+            <h2>Bert-test af nyt site</h2>
+            <a href="bert_final_1.png" target="_blank">
+                <img src="bert_final_1.png" alt="Endelig Bert-test">
+            </a>
+            <a href="bert_final_2.png" target="_blank">
+                <img src="bert_final_2.png" alt="Endelig Bert-test">
+            </a>
+            <a href="bert_final_3.png" target="_blank">
+                <img src="bert_final_3.png" alt="Endelig Bert-test">
+            </a>
+            <a href="bert_final_4.png" target="_blank">
+                <img src="bert_final_4.png" alt="Endelig Bert-test">
+            </a>
+            <a href="bert_final_5.png" target="_blank">
+                <img src="bert_final_5.png" alt="Endelig Bert-test">
+            </a>
+            <a href="bert_final_6.png" target="_blank">
+                <img src="bert_final_6.png" alt="Endelig Bert-test">
+            </a>
+            <a href="bert_final_7.png" target="_blank">
+                <img src="bert_final_7.png" alt="Endelig Bert-test">
+            </a>
+            <h2>Dokumentation</h2>
+            <strong>Oprettelse af Masonry-galleri</strong>
+            <p>
+                Til at skabe vores Masonry-gallery har vi lånt HTML og CSS kode fra det linkede website i opgaveformuleringen (https://speckyboy.com/snippets-masonry-grid-layouts/).
+                Vi valgte at skabe et Masonry-gallery, hvor vores billeder fremstår som ”post-it” lapper, hvilket vi syntes var n sjov og kreativ måde at vise vores original billeder.
+            </p>
+            <a href="masonry_dokumentation.png"><img src="masonry_dokumentation.png" alt="Screenshot af masonry-galleri"></a>
+            <strong>Oprettelse af "find os"-knapper på forsiden</strong>
+            <p>
+                Til vores knapper har vi fået inspiration fra denne hjemmeside der havde et udvalg af knapper: <br>
+                https://tympanus.net/codrops/2013/06/13/creative-button-styles/<br>
+                Her kunne man downloade deres html og css til følgende og udplukke hvad man ville bruge.<br>
+                Vi valgte at bruge den knap der hed button 5. Når man hover over denne knap forsvinder skriften ud til højre side og fra venstre side kommer der et ikon ind. Her kunne man selv være kreativ med ikon valg og hvad der skulle stå.<br>
+                Siden vores klient kun bruger facebook og instagram, valgte vi at lave knapper der linkede til disse platforme, samt et link til google maps med deres adresse.<br><br>
+
+                Vi kopierede det html som vi ville bruge fra deres ind i vores eget, og rettede lidt til.<br>
+                Vi rettede navnene på de forskellige knapper og derefter rettede vi farver og størrelse.<br>
+                For at få ikonerne vist downloadede vi en font der generede disse ikoner fra denne hjemmeside: https://icomoon.io/app/#/select .
+                Her fik vi en reference kode til hvert ikon, som vi kunne referere til inde i vores css.<br><br>
+
+
+                Process fra start til slut:<br>
+
+                Først fjernede vi alt hvad vi ikke skulle bruge fra deres html så vi nemmere kunne få et overblik over hvilke koder vi præcis skulle bruge. Det samme gjaldt for css’en.<br>
+
+                Da vi havde cuttet alt det overflødige fra tog vi de resterende koder og satte ind i henholdsvis i vores html og vores css.<br>
+
+                Derefter gik vi ind på IcoMoon og downloade fonten vi skulle bruge samt udvalgte de ikoner vi gerne ville have på vores hjemmeside. Derfra fik vi nogle koder vi senere kunne referere til.<br>
+
+                Vi satte @font-face ind øverst i vores css hvor vi refererede til den mappe vores font ligger i.<br>
+
+                Herefter rettede vi udseendet på knapperne til i vores css og refererede til de bestemte ikoner.
+                <a href="knap_dok_1.png" target="_blank">
+                    <img src="knap_dok_1.png" alt="Eksempel på HTML" style="width: 75%;">
+                </a>
+                <a href="knap_dok_2.png" target="_blank">
+                    <img src="knap_dok_2.png" alt="Eksempel på HTML" style="width: 45%;">
+                </a>
+                <a href="knap_dok_3.png" target="_blank">
+                    <img src="knap_dok_3.png" alt="Eksempel på HTML" style="width: 45%;">
+                </a>
+                <a href="knap_dok_4.png" target="_blank">
+                    <img src="knap_dok_4.png" alt="Eksempel på HTML" style="width: 45%;">
+                </a>
+                <a href="knap_dok_5.png" target="_blank">
+                    <img src="knap_dok_5.png" alt="Eksempel på HTML" style="width: 45%;">
+                </a>
+                <a href="knap_dok_6.png" target="_blank">
+                    <img src="knap_dok_6.png" alt="Eksempel på HTML" style="width: 75%;">
+                </a>
+                <a href="knap_dok_7.png" target="_blank">
+                    <img src="knap_dok_7.png" alt="Eksempel på HTML" style="width: 75%;">
+                </a>
+
+            </p>
+
+            <h1>Dokumentation af grafik til burger-menu</h1>
+            <p>
+                Burger-menuen har vi selv kodet. Til grafik har vi dog brugt en SVG fra icomoon.io, hvor vi har kopieret path-koden ind i HTML'en.
+            </p>
+            <a href="icon.JPG" target="_blank">
+                <img src="icon.JPG" alt="Eksempel på HTML" style="width: 50%;">
+            </a>
+            <h2>Git versionskontrol</h2>
+            <a href="git" target="_blank">
+                <img src="git.JPG" alt="Screenshot af Git">
+            </a>
+        </div>
+    </div>
+</body>
+
+</html>
