@@ -1,0 +1,1070 @@
+/* Indholdsfortegnelse: */
+
+/*
+
+ 1. GENERAL
+     1.1 TEXT
+
+
+ 2. NAVIGATION
+     2.1 BURGER MENU
+     2.2 NAV
+
+
+ 3. HEADER
+
+
+ 4. MAIN
+     4.1 SECTION
+     4.2 VORES TEAM
+     4.3 BØGER FOR MOUSE DEVICES
+     4.4 GALLERY
+     4.4 WEBSHOP
+
+
+ 5. FOOTER
+
+
+ 6. HELPERS
+
+
+ 7.MEDIA QUERIES
+
+*/
+
+/*---------------------------------------------------- 1. GENERAL ---------------------------------------*/
+
+:root {
+    --main-body-font: 'Open Sans', sans-serif;
+    --main-heading-font: 'Montserrat', sans-serif;
+    --main-design-color: #030c26;
+    --main-background-color: #FCFCFC;
+    --main-padding: 10px;
+    /*Variabel, så vi kan tilføje mere eller mindre padding til alle elementer på siden*/
+}
+
+body {
+    margin: 0;
+    /*Fjerner standard margin på 8px fra siden*/
+}
+
+img {
+    display: block;
+    width: 100%;
+    /*Gør at billeder passer ind i div'er i stedet for at vises i fuld størrelse*/
+}
+
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+/*-------------------------------------------------------- 1.1 TEXT ---------------------------------------*/
+
+html {
+    font-family: var(--main-body-font);
+    color: var(--main-design-color);
+}
+
+a {
+    /*text-decoration: none;*/
+    color: #b46d3a;
+}
+
+a:hover {
+    color: var(--main-design-color);
+
+}
+
+/*Giver h1 og h2 en streg over teksten, som passer med bredden på teksten*/
+h1 {
+    border-top: 2px solid var(--main-design-color);
+    width: fit-content;
+    font-size: 2.4rem;
+    font-weight: 400;
+    margin: 5vh var(--main-padding) 2vh var(--main-padding);
+}
+
+h2 {
+    margin: 10px 0 30px 0;
+    font-size: 2rem;
+    padding-top: 10px;
+    border-top: 1px solid var(--main-design-color);
+    width: fit-content;
+}
+
+h1,
+h2 {
+    font-family: var(--main-heading-font);
+}
+
+h2 {
+    font-weight: 400;
+}
+
+h3 {
+    font-family: var(--main-heading-font);
+    font-weight: 700;
+    margin: 10px 0;
+    font-size: 1.3rem;
+}
+
+h4 {
+    font-family: var(--main-heading-font);
+    font-weight: 400;
+    margin: 10px 0;
+    font-size: 1.1rem;
+}
+
+/*---------------------------------------------------- 2. NAVIGATION ---------------------------------------*/
+
+/*--------------------------------------------------- 2.1 BURGER MENU -------------------------------------*/
+.burger_menu {
+    width: 100vw;
+    display: flex;
+    justify-content: flex-end;
+    /*Sat til 94, så det bliver 100 sammen med padding*/
+    /*height: 80px;*/
+    background-color: var(--main-background-color);
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.13);
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    /*Menuen ligger altid øverst*/
+}
+
+.burger_menu img {
+    height: 25px;
+    padding: 10px;
+    width: auto;
+    /*margin-top: 15px;*/
+    /*margin-right: 10px;*/
+}
+
+/*---------------------------------------------------------- 2.2 NAV ---------------------------------------*/
+
+nav {
+    height: 100vh;
+    width: 90vw;
+    /*Sat til 90 så det bliver 100 med padding*/
+    padding: 0 5vw;
+    background-color: var(--main-design-color);
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    z-index: 99;
+    transition: all 0.5s ease-out;
+}
+
+.menu_logo {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 30px;
+    padding-top: 50px;
+}
+
+/*Liste med menupunkter*/
+nav ul {
+    list-style: none;
+    /*Fjerner standard list-styling (dvs. bullets)*/
+    margin-top: 5vh;
+    margin-bottom: 15vh;
+}
+
+nav ul li {
+    margin: 20px;
+}
+
+nav a {
+    font-family: Montserrat, sans-serif;
+    font-weight: 200;
+    color: var(--main-background-color);
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+
+nav a:hover {
+    color: var(--main-background-color);
+}
+
+/*Stregen som ligger før det nuværende menupunkt*/
+.menu_stroke {
+    display: inline-block;
+    width: 12px;
+    opacity: 0;
+    height: 100%;
+    margin-bottom: 6px;
+    margin-right: 10px;
+}
+
+/*Sørger for, at menu_stroke er synlig på det nuværende menupunkt*/
+/*Her er brugt opacity i stedet for display: none, for at undgå, at ting hopper, når den vises*/
+nav ul li a.current .menu_stroke {
+    opacity: 1;
+}
+
+.menu_position {
+    bottom: 100vh;
+}
+
+/*--------------------------------------------------------- 3. HEADER ---------------------------------------*/
+
+header {
+    height: 90vh;
+    padding-bottom: 10vh;
+    /*Skal altid være lige så høj som skærmen*/
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.video_div {
+    /*position: absolute;*/
+    position: relative;
+    display: flex;
+    align-items: center;
+    bottom: 5vh;
+    height: 60vh;
+    width: 100vw;
+    overflow: hidden;
+}
+
+.myVideo {
+    width: 100vw;
+    overflow: hidden;
+}
+
+#desktop_video {
+    display: none;
+}
+
+/*Logo i toppen af mobil-versionen*/
+.mobile_logo {
+    margin: 100px 0;
+    width: 60%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+/*Styling for begge arrows i headeren - den blå til mobile og hvid til desktop*/
+.header_arrow {
+    /*position: absolute;*/
+    /*top: 95vh;*/
+    width: auto;
+    margin-bottom: 20px;
+    animation-name: slideArrow;
+    animation-duration: 1.5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    /*Sørger for, at den ikke er lige så bred som div'en og bliver strukket*/
+}
+
+@keyframes slideArrow {
+    0% {
+        opacity: 0;
+        transform: translateY(-3vh);
+    }
+
+    40% {
+        opacity: 0.5;
+        transform: translateY(-2vh);
+    }
+
+    60% {
+        opacity: 1;
+        transform: translateY(-1vh);
+    }
+
+    100% {
+        opacity: 0;
+        transform: translateY(1vh);
+    }
+
+}
+
+/*Skjuler den hvide pil på mobile*/
+.header_arrow_white {
+    display: none;
+}
+
+/*.myVideo {*/
+/*    position: absolute;*/
+/*    bottom: 0vw;*/
+/*    !*den er sat til 100% fordi man skal kunne se hele videoen, og ikke hvor den er zoomet ind*!*/
+/*    width: 100%;*/
+/*    !**/
+/*    min-width: 100%;*/
+/*    min-height: 100vh;*/
+/**!*/
+/*    z-index: -1;*/
+/*}*/
+
+.social_media_icons {
+    position: absolute;
+    display: flex;
+    /*flex-basis: 1;*/
+    flex-direction: row;
+    top: auto;
+    bottom: 3vh;
+    height: 30px;
+}
+
+.social_media_icons_kontakt {
+    display: flex;
+    /*flex-basis: 1;*/
+    flex-direction: row;
+    /*margin-top: 0.5vh;*/
+    /*margin-left: -1vw;*/
+    cursor: pointer;
+}
+
+.facebook_kontakt {
+    width: 40px;
+    height: 40px;
+    margin: 5px;
+    cursor: pointer;
+
+}
+
+.instagram_kontakt {
+    width: 40px;
+    height: 40px;
+    margin: 5px;
+    cursor: pointer;
+
+}
+
+.facebook {
+    height: 100%;
+    margin-bottom: 2px;
+    margin-right: 10px;
+}
+
+.instagram {
+    height: 100%;
+    margin-left: 10px;
+}
+
+.sub_nav a {
+    text-decoration: none;
+    cursor: pointer;
+    text-align: left;
+    margin-right: 40px;
+    padding: 0;
+
+}
+
+.sub_nav {
+    display: flex;
+    flex-direction: row;
+    font-family: var(--main-heading-font);
+    margin-top: 20px;
+    margin-left: var(--main-padding);
+}
+
+
+
+/*----------------------------------------------------------- 4. MAIN ---------------------------------------*/
+
+main {
+    /*Sætter max på, så vi har lidt styr på, hvordan det ser ud på en større skærm*/
+    max-width: 1300px;
+}
+
+.page_container {
+    padding-top: 15px;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #F3F3F3;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 20px;
+    height: 50px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background-color: var(--main-design-color);
+}
+
+/*--------------------------------------------------------- 4.1 SECTION -------------------------------------*/
+/*Bruges til de generelle, "almindelige" sektioner, såsom Hvem er vi?, som skal skifte farve ved hveranden*/
+
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /*min-height sørger for, at hver section kan være på skærmen alene, uden man kan se de andre*/
+    min-height: 100vh;
+    padding-top: 30px;
+    align-items: center;
+    /*padding: 50px 0;*/
+    /*Sørger for, at der altid er noget white space omkring content-boksene*/
+}
+
+.content {
+    padding: var(--main-padding);
+}
+
+/*Sørger for, at hveranden content box får baggrundsfarve*/
+section:nth-of-type(odd) .content {
+    background-color: #F3F3F3;
+}
+
+.text_content,
+.image_content {
+    flex: 1;
+}
+
+/*Giver en streg 20px under p'er, og giver 10px margin under stregen*/
+.text_content {
+    padding-bottom: 20px;
+    border-bottom: 2px solid var(--main-design-color);
+    margin-bottom: 10px;
+}
+
+/*--------------------------------------------------------- 4.2 VORES TEAM -------------------------------------*/
+/*Bruges team Vores team, fordi alt skal være i én section (med samme baggrundsfarve) og have speciel margin og
+overskrifter*/
+
+.sub_section {
+    margin-bottom: 100px;
+}
+
+/*Sørger for, at den sidste medarbejder ikke har margin under sectionen*/
+.sub_section:last-child {
+    margin-bottom: 0;
+}
+
+/*Centrerer navnet og stillingen på medarbejderen, uden at centrere overskrifterne på resten af siden*/
+.team_member h3,
+.team_member h4 {
+    width: 100%;
+    text-align: center;
+}
+
+/*--------------------------------------------------------- 4.3 BØGER FOR MOUSE DEVICES -----------------------------------------*/
+#boeger {
+    min-height: 80vh;
+}
+
+.bog h3 {
+    font-size: 1.5rem;
+    padding: 10px 0 40px 0;
+}
+
+/*På telefonen følger bøger den generelle styling på siden, men på desktop har vi hover-funktionen. Denne funktion
+fungerer ved, at vi har .is_not_touch_device tilføjet til HTML'en, og med denne klasse bliver .bog__details dermed
+stylet anderledes.*/
+
+.bog {
+    position: relative;
+    /*Sørger for at alt der løber uden for div'en - dvs. uden for billedet - ikke kan ses. Dette bliver kun relevant
+    med .bog__details-stylingen på ikke-touch-devices.*/
+    overflow: hidden;
+}
+
+/*Styling af hele tekst-boksen på ikke-touch-devices.*/
+.is_not_touch_device .bog__details {
+    /*Placerer boksen med tekst oven på billedet*/
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    /*Sørger for, at al "animation"/transition på boksen kører på denne måde - dvs. i dette tilfælde, bevægelsen når
+    man hover over bogen.*/
+    transition: all 0.5s ease-out;
+    /*Den almindelige styling af tekst-boksen*/
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: #F3F3F3;
+    color: var(--main-design-color);
+    text-align: center;
+    padding: 0 10px;
+    cursor: pointer;
+}
+
+/*Placerer tekst-boksen 85% fra toppen af billedet, og fjerner stregen i bunden af text_content*/
+.is_not_touch_device .bog__details {
+    top: 85%;
+    border: 0;
+    margin: 0;
+}
+
+/*Sender tekst-boksen op til toppen, når man holder musen over bøgerne*/
+.is_not_touch_device .bog:hover .bog__details {
+    top: 0;
+}
+
+/*--------------------------------------------------------- 4.4 GALLERY -----------------------------------------*/
+
+.desktop_gallery {
+    display: none;
+    grid-template-columns: 1fr 1fr 1fr;
+    min-height: 50vh;
+    align-items: center;
+    padding: var(--main-padding);
+    grid-gap: 10px;
+}
+
+/* Slideshow-container til mobilen*/
+.slideshow-container {
+    width: 100%;
+    position: relative;
+    margin: 40px auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+    display: none;
+}
+
+/* Fading animation */
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+#bottom_gallery {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 10px;
+    padding: 50px;
+}
+
+/*----------------------------------------------------------- 4.4 WEBSHOP -----------------------------------------*/
+
+#webshop p {
+    border: none;
+}
+
+#webshop .text_content {
+    padding-bottom: 30px;
+    border-bottom: 2px solid var(--main-design-color);
+}
+
+.webshop_button a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.webshop_button {
+    max-width: 70%;
+    background-color: var(--main-design-color);
+    color: white;
+    margin: 5vw auto 10px auto;
+    padding: 20px 10px;
+    text-align: center;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.webshop_button:hover {
+    background-color: rgba(3, 12, 38, 0.85);
+}
+
+/*------------------------------------------------------------- 4.5 MAP ----------------------------------------*/
+
+/*---------------MAP----------------*/
+
+.map {
+    position: relative;
+    height: 100%;
+}
+
+.map svg {
+    width: 80%;
+    /*position: absolute;*/
+    top: 0;
+    height: 100%;
+
+}
+
+/*Farverne til svg-map*/
+.cls-1 {
+    fill: #a9b2c3;
+}
+
+.cls-2 {
+    fill: #698fb5;
+}
+
+.cls-3 {
+    fill: #455e84;
+}
+
+.cls-4 {
+    fill: var(--main-design-color);
+
+}
+
+.map .mapbox {
+    position: absolute;
+    right: 0;
+    margin-top: 20px;
+    z-index: 98;
+    max-width: 40%;
+}
+
+.mapbox h3 {
+    cursor: pointer;
+}
+
+.map h3 {
+    font-size: 1rem;
+    font-weight: normal;
+    margin: 0;
+}
+
+.square {
+    height: 10px;
+    min-width: 10px;
+    margin-right: 10px;
+    margin-top: 4px;
+}
+
+/*------NEMLIG------*/
+
+.nemligbox {
+    cursor: default;
+    display: flex;
+    margin: 10px 0;
+}
+
+.nemligbox .square {
+    background-color: #698fb5;
+    margin-top: 4px;
+}
+
+.nemliglogo {
+    background-image: url(elements/nemliglogo.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 30px;
+    width: 100px;
+    position: absolute;
+    z-index: 20;
+}
+
+/*------LARSJON------*/
+.larsjon {
+    cursor: default;
+    display: flex;
+    margin: 10px 0;
+}
+
+.larsjon .square {
+    background-color: #455e84;
+}
+
+.larsjonlogo {
+    background-image: url(elements/larsjonlogo.svg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    margin-top: 20px;
+    height: 50px;
+    width: 100px;
+    position: absolute;
+}
+
+/*------BUTIKKEN------*/
+.butikken {
+    cursor: default;
+    display: flex;
+}
+
+.butikken .square {
+    background-color: var(--main-design-color);
+    height: 10px;
+    width: 10px;
+    margin-right: 10px;
+    margin-top: 4px;
+}
+
+/*------------------------------------------------------------- 4.6 NEWS LETTER ----------------------------------------*/
+
+#nyhedsbrev_tak {
+    display: none;
+}
+
+.open-button {
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+    text-decoration: underline;
+    text-align: left;
+    font-size: 1rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.form-popup {
+    display: none;
+    cursor: default;
+}
+
+/* Add styles to the form container */
+.form-container {
+    max-width: 350px;
+    max-height: 100px;
+    position: relative;
+}
+
+/* Full-width input fields */
+.form-container input[type=text],
+.form-container input[type=password] {
+    width: 300px;
+    padding: 15px;
+    margin: 5px 0;
+    border: none;
+}
+
+/* When the inputs get focus, do something */
+.form-container input[type=text]:focus,
+.form-container input[type=password]:focus {}
+
+/* Set a style for the submit/login button */
+.form-container .btn {
+    padding: 15px;
+    border: none;
+    cursor: pointer;
+    width: 330px;
+    margin-bottom: 10px;
+    opacity: 0.8;
+}
+
+/* Add a red background color to the cancel button */
+.form-container .cancel {
+    position: absolute;
+    margin-top: 15px;
+    right: 20px;
+    background-image: url(elements/burger_icon_x.svg);
+    background-repeat: no-repeat;
+    background-color: transparent;
+    width: 30px;
+    height: 30px;
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover,
+.open-button:hover {
+    opacity: 1;
+}
+
+/*------------------------------------------------------------- 5. FOOTER ----------------------------------------*/
+
+footer {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    color: var(--main-design-color);
+    text-align: center;
+    line-height: 50px;
+}
+
+/*-------------------------------------------------------------- 6. HELPERS ---------------------------------------*/
+
+.hidden {
+    display: none;
+}
+
+.mobile_hidden {
+    display: none;
+    z-index: 101;
+}
+
+#adresse_overskrift {
+    margin-right: 30px;
+}
+
+.hide_overflow {
+    overflow: hidden;
+}
+
+.margin-left {
+    margin-left: var(--main-padding);
+}
+
+/*----------------------------------------------------- 7. MEDIA QUERIES ---------------------------------------*/
+
+@media screen and (max-width: 365px) {
+    .form-container .btn {
+        max-width: 330px;
+        width: auto;
+    }
+
+    .form-container input[type=text],
+    .form-container input[type=password] {
+        max-width: 150px;
+    }
+
+    .form-container .cancel {
+        left: auto;
+        right: 0;
+    }
+
+    .sub_nav a {
+        margin-right: 15px;
+    }
+}
+
+@media screen and (min-width: 767px) {
+    .desktop_gallery {
+        display: grid;
+    }
+
+    .slideshow-container {
+        display: none;
+    }
+
+    :root {
+        --main-padding: 80px;
+    }
+
+    .team_member {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .team_member .text_content {
+        border: none;
+        margin: 0 20px;
+        padding: 0;
+        flex: 1.5;
+    }
+
+    div:nth-of-type(odd).team_member {
+        flex-direction: row-reverse;
+    }
+
+    nav {
+        width: 50vw;
+        padding: 0 25vw;
+    }
+
+    #bottom_gallery {
+        grid-gap: 50px;
+        padding: 100px;
+    }
+
+}
+
+@media screen and (min-width: 1023px) {
+    #desktop_video {
+        display: block;
+    }
+
+    #mobile_video {
+        display: none;
+    }
+
+    #bottom_gallery {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    :root {
+        --main-padding: 50px;
+    }
+
+    .content {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    section {
+        padding: 0;
+    }
+
+    section:nth-of-type(odd) .content {
+        flex-direction: row-reverse;
+    }
+
+    section .image_content {
+        margin-top: 18px;
+    }
+
+    section:nth-of-type(odd) .content .image_content {
+        margin-left: 40px;
+    }
+
+    section:nth-of-type(even) .content .image_content {
+        margin-right: 40px;
+    }
+
+    .grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 20px;
+
+    }
+
+    .team_member {
+        margin-bottom: 0;
+    }
+
+    #vores_team .image_content {
+        margin: 0;
+    }
+
+    .bog.sub_section {
+        margin: 0;
+    }
+
+    .grid-3 {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 10px;
+    }
+
+    #kurser .text_content {
+        border: none;
+        padding-bottom: 0;
+    }
+
+    #kurser h2 {
+        margin-top: 40px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .header_arrow_blue {
+        display: none;
+    }
+
+    .header_arrow {
+        position: absolute;
+        left: 50vw;
+        bottom: 0;
+
+        padding-left: 100px;
+    }
+
+    .header_arrow_white {
+        display: block;
+        z-index: 200;
+
+    }
+
+    .mobile_logo {
+        display: none;
+    }
+
+    .burger_menu {
+        display: none;
+    }
+
+    nav {
+        width: 225px;
+        padding: 0 20px;
+        /*position: sticky;*/
+        top: 0;
+    }
+
+    nav ul {
+        padding: 5vh 20px 20vh 0;
+    }
+
+    .menu_logo {
+        margin-top: 7vw;
+        width: 100%;
+    }
+
+    .video_div {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        min-width: 100vw;
+        min-height: 100vh;
+        overflow: hidden;
+    }
+
+    .myVideo {
+        position: absolute;
+        min-width: 100vw;
+        min-height: 100vh;
+        overflow: hidden;
+        object-fit: cover;
+    }
+
+    .hide_overflow {
+        overflow: auto;
+    }
+
+    .mobile_hidden {
+        display: flex;
+    }
+
+    main {
+        padding-left: 300px;
+        padding-right: 50px;
+        margin: 5vh auto 0 auto;
+    }
+
+    footer {
+        padding-left: 300px;
+        /*padding-right: 50px;*/
+    }
+
+    .grid-3 {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    h1 {
+        margin: 2vh var(--main-padding) 0 var(--main-padding);
+    }
+
+
+}
+
+@media screen and (min-width: 1400px) {
+    .grid-3 {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .map .mapbox {
+        margin-top: 90px;
+    }
+
+}
