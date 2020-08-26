@@ -183,9 +183,9 @@ function start() {
         dest.querySelector("#text_content").innerHTML += page.content.rendered;
 
         // Tilføjer alle de billeder, der findes til siden, efter hinanden
-        page.image.forEach(image => {
-            dest.querySelector("#image_content").innerHTML += `<img src="${image.guid}">`;
-        })
+        // page.image.forEach(image => {
+        //     dest.querySelector("#image_content").innerHTML += `<img src="${image.guid}">`;
+        // })
     }
 
     mainNavButtonPage.forEach(button => {
