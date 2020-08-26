@@ -1,0 +1,410 @@
+:root {
+    /* Base colors for houses */
+    --Gryffindor-main-color: #ac1200;
+    --Hufflepuff-main-color: #aca125;
+    --Slytherin-main-color: #328522;
+    --Ravenclaw-main-color: #15466d;
+}
+
+/* ----- GENERAL DESIGN -----*/
+
+html {
+    font-family: sans-serif;
+}
+
+body {
+    margin: 0;
+    overflow-y: scroll;
+    background-color: #fefff6;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    margin: 0 auto;
+}
+
+table {
+     border-collapse: collapse;
+ }
+
+
+/* ----- ICONS ----- */
+
+.sort_icon {
+    height: 15px;
+    margin-left: -3px;
+    margin-bottom: -3px;
+    opacity: 0.3;
+}
+
+.sort_icon.sorting_active {
+    opacity: 1;
+}
+
+.crest {
+    height: 35px;
+    margin-bottom: -8px;
+    margin-left: 5px;
+}
+
+.icon {
+    height: 15px;
+}
+
+
+/* ----- STUDENT LIST ----- */
+
+h1 {
+    margin: 30px 0;
+    padding-bottom: 5px;
+    border-bottom: 1px solid darkgrey;
+}
+
+.student_list_container {
+    width: 900px;
+    background-color: rgba(139, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.student_count {
+    text-align: center;
+    margin: 10px 0 20px 0;
+    font-size: 1.2rem;
+}
+
+.student_count_number {
+    display: inline-block;
+    font-weight: bold;
+}
+
+.table_headings {
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    font-weight: bold;
+}
+
+.student_list {
+    padding: 20px;
+    width: 100%;
+}
+
+.list_options {
+    text-align: right;
+    margin-top: 10px;
+}
+
+.list_options label,
+.list_options button {
+    margin-right: 10px;
+    margin-top: 10px;
+}
+
+
+/* ----- STUDENT IN LIST -----*/
+
+.list_student_container {
+    cursor: pointer;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    margin: 10px;
+}
+
+.student_list_container td {
+    padding: 10px;
+}
+
+.student_thumbnail {
+    border: 3px solid darkred;
+    border-radius: 30px;
+    width: 75px;
+}
+
+.list_prefect,
+.list_inq_squad {
+    text-align: center;
+}
+
+.list_house {
+    text-align: right;
+}
+
+
+/* ----- POPUP WINDOW ----- */
+
+.popup_container {
+    display: none;
+}
+
+/* The clickable background that dims out the list */
+.popup_dim {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: white;
+    opacity: 0.5;
+}
+
+.popup {
+    width: 900px;
+    background-color: #ac1200;
+
+    /* Places the box in the middle of the container */
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50% );
+}
+
+.popup_info {
+    color: white;
+    padding: 10px 50px 50px 50px;
+    margin: 0 auto;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: 140px auto auto auto;
+}
+
+.close img {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    width: 20px;
+    height: 20px;
+    opacity: 0.7;
+}
+
+.close img:hover {
+    position: absolute;
+    right: 7px;
+    top: 7px;
+    width: 26px;
+    height: 26px;
+    opacity: 1;
+}
+
+.student_heading {
+    color: white;
+    text-align: center;
+}
+
+h2 {
+    font-size: 2rem;
+    margin: 20px 0 0 0;
+}
+
+.is_expelled {
+    font-size: 1.6rem;
+    margin-top: 10px;
+}
+
+.popup_crest {
+    height: 50px;
+    margin-top: 10px;
+}
+
+.td_label {
+    padding-right: 10px;
+}
+
+.popup_student_info {
+    display: grid;
+}
+
+.popup_options_container {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.popup_option_buttons {
+    width: 190px;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    align-items: flex-end;
+    padding: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.7);
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.popup_option_buttons button {
+    height: fit-content;
+    width: 100%;
+    text-align: right;
+    padding: 5px;
+    margin: 2px;
+}
+
+.td_label {
+    font-weight: bold;
+}
+
+
+/* ----- HELPERS ----- */
+
+.hidden {
+    display: none;
+}
+
+.desktop-hidden {
+    display: none;
+}
+
+.fade_out {
+    animation-name: fade_out_kf;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fade_out_kf {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+.dontexpelme {
+    margin: 100px 10px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.dontexpelme a {
+    font-size: 2rem;
+    margin: 50px 0;
+    color: deeppink;
+}
+
+.dontexpelme img {
+    max-width: 100%;
+}
+
+
+@media screen and (max-width: 899px) {
+
+    /* ----- STUDENT LIST ----- */
+
+    .student_list_container {
+        width: 90vw;
+        margin: 0 auto;
+    }
+
+    .table_headings {
+        display: none;
+    }
+
+    .list_last_name,
+    .list_first_names,
+    .list_blood_status {
+        display: flex;
+    }
+
+
+    /* ----- STUDENT IN LIST ----- */
+
+    .list_student_container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .thumbnail {
+        text-align: center;
+        grid-column: 1/4;
+    }
+
+    .student_thumbnail {
+        width: auto;
+    }
+
+    .list_house {
+        grid-column: 1/4;
+        grid-row: 2/3;
+        text-align: center;
+    }
+
+    .list_last_name {
+        grid-column: 1/3;
+        grid-row: 3/4;
+    }
+
+    .list_first_names {
+        grid-column: 1/3;
+        grid-row: 4/5;
+    }
+
+    .list_blood_status {
+        grid-column: 1/3;
+        grid-row: 5/6;
+    }
+
+    .list_prefect {
+        grid-column: 3/4;
+        grid-row: 3/4;
+    }
+
+    .list_inq_squad {
+        grid-column: 3/4;
+        grid-row: 4/5;
+    }
+
+
+    /* ----- POPUP ----- */
+
+    .popup {
+        width: 90vw;
+        margin: 0 auto;
+    }
+
+    .popup_image {
+        margin-right: 100px;
+    }
+
+    .popup_info {
+        grid-template-columns: auto 1fr;
+    }
+
+
+    /* ----- HELPERS ----- */
+    .desktop-hidden {
+        display: block;
+    }
+}
+
+
+@media screen and (max-width: 600px) {
+
+    h1 {
+        text-align: center;
+    }
+
+    .popup_info {
+        grid-template-columns: 1fr;
+    }
+
+    .popup_options_container {
+        justify-content: flex-start;
+    }
+
+    .list_options {
+        display: grid;
+        grid-gap: 5px;
+        grid-template-columns: 1fr;
+    }
+}
+
+
+@media screen and (max-width: 400px) {
+
+    .list_student_container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
