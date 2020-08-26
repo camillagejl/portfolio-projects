@@ -1,0 +1,205 @@
+/* ----- VIDEO -----*/
+
+:root {
+    --var-content-font: 'Press Start 2P', cursive;
+}
+
+body {
+    background-color: #242424;
+    margin: 0;
+    font-family: var(--var-content-font);
+    color: white;
+}
+
+.video_container {
+    /* @see https://stackoverflow.com/a/20593342/1155596 */
+    background-color: black;
+    width: 100vw;
+    height: 56.25vw;
+    max-height: 100vh;
+    max-width: 177.78vh;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    overflow: hidden;
+}
+
+/*----- START BUTTON -----*/
+
+.start_button {
+    z-index: 100;
+    background-color: hotpink;
+    font-size: 200%;
+    padding: 3%;
+    border-radius: 10px;
+    cursor: pointer;
+    color: white;
+    border: none;
+
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+
+}
+
+/*.video_container {*/
+/*    overflow: hidden;*/
+/*    width: 100vw;*/
+/*    height: 100vh;*/
+/*    background-color: black;*/
+
+/*    !* Places the video in the middle of the screen *!*/
+/*    position: fixed;*/
+/*    left: 50%;*/
+/*    top: 50%;*/
+/*    transform: translateX(-50%) translateY(-50% );*/
+/*}*/
+
+.full_screen {
+
+}
+
+.text_content {
+    display: none;
+}
+
+
+/* ----- SCREEN 1 -----*/
+
+.intro_text {
+    display: block;
+    font-size: 250%;
+    line-height: 200%;
+    text-align: center;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+/*----- SCREEN 2 -----*/
+
+.logo {
+    position: absolute;
+    left: 50%;
+    top: 35%;
+    transform: translateX(-50%);
+    width: 40%;
+
+    animation-name: fade_in_kf;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in;
+
+}
+
+.logo svg {
+    width: 100%;
+    height: 100%;
+}
+
+.logo_text {
+    display: block;
+    font-size: 200%;
+    line-height: 200%;
+    text-align: center;
+    margin-top: 7%;
+}
+
+/* ----- VIDEO ----- */
+
+#videoSVG {
+    width: 100%;
+    height: 100%;
+}
+
+/* ----- CHARACTERS ----- */
+
+.character_container {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.character {
+    position: absolute;
+    left: -20%;
+    top: 50%;
+    transform: translateY(-50%);
+
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+.character svg {
+    height: 100%;
+    width: 100%;
+}
+
+.camilla {
+    animation-name: slide_in_left_kf;
+    width: 20%;
+    transform: translateY(-54%);
+}
+
+.julie {
+    animation-name: slide_in_right_kf;
+    width: 24%;
+}
+
+.character_text {
+    display: block;
+    font-size: 125%;
+    line-height: 150%;
+    text-align: center;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+/* ----- END SCREEN ----- */
+
+.narrow {
+    width: 40%;
+}
+
+/* ----- KEY FRAMES ----- */
+
+@keyframes fade_in_kf {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes slide_in_left_kf {
+    0% {
+        left: -20%;
+    }
+
+    100% {
+        left: 75%;
+    }
+}
+
+@keyframes slide_in_right_kf {
+    0% {
+        left: 120%;
+    }
+
+    100% {
+        left: 5%;
+    }
+}

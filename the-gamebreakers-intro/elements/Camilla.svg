@@ -1,0 +1,44 @@
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" width="100.43" height="151.07" viewBox="0 0 100.43 151.07">
+  <title>Camilla</title>
+  <g id="C_leg_2">
+    <rect x="31.85" y="118.44" width="14.75" height="31.95" rx="3.45" ry="3.45" fill="#990484"/>
+    <rect x="31.85" y="122.53" width="13.27" height="27.85" rx="3.45" ry="3.45" fill="#ea00be"/>
+  </g>
+  <rect id="C_leg_shadow" x="56.92" y="118.14" width="14.75" height="31.95" rx="3.45" ry="3.45" fill="#990484"/>
+  <g id="C_arm_2">
+    <rect x="18.88" y="86.66" width="15.54" height="35.5" rx="7" ry="7" transform="translate(27.64 -3.34) rotate(14.84)" fill="#eabfa2"/>
+    <rect x="19.01" y="87.14" width="14" height="33.33" rx="7" ry="7" transform="translate(27.46 -3.2) rotate(14.84)" fill="#f4d4be"/>
+  </g>
+  <g id="C_body">
+    <rect x="27.41" y="71.49" width="52.8" height="57.5" rx="12" ry="12" fill="#990484"/>
+    <rect x="26.86" y="74.76" width="48.69" height="53.02" rx="12" ry="12" fill="#ea00be"/>
+  </g>
+  <g id="C_head_outer">
+    <rect x="2.83" y="36.79" width="96.86" height="49.87" rx="24.94" ry="24.94" fill="#990484"/>
+    <rect x="0.85" y="36.79" width="92.95" height="50.37" rx="25.18" ry="25.18" fill="#ea00be"/>
+  </g>
+  <g id="C_face">
+    <rect x="6.57" y="43.81" width="75.78" height="38.96" rx="19.48" ry="19.48" fill="#eabfa2"/>
+    <rect x="6.68" y="43.81" width="69.87" height="38.96" rx="19.48" ry="19.48" fill="#f4d4be"/>
+  </g>
+  <g id="C_hat">
+    <polygon points="90.43 30.41 76.48 24.16 62.53 17.91 74.92 8.95 87.3 0 88.86 15.2 90.43 30.41" fill="#ea00be"/>
+    <ellipse cx="76.25" cy="25.03" rx="7.62" ry="15.46" transform="translate(19.19 81.47) rotate(-62.86)" fill="#990484"/>
+    <path d="M65.82,15.53,70.76,12c6.56.71,12.83,3.78,18.77,9.72l.73,7.14C83.63,20.95,75.57,16.31,65.82,15.53Z" fill="#eadce9"/>
+    <line x1="49.71" y1="26.99" x2="90.34" y2="-13.64" fill="none"/>
+  </g>
+  <ellipse id="C_eye_2" cx="21.57" cy="63.2" rx="3.87" ry="5.52"/>
+  <ellipse id="C_eye_1" cx="56.49" cy="63" rx="3.87" ry="5.32"/>
+  <g id="C_hair">
+    <path d="M22.12,43.1c-5.12,1.07-8.34,2.44-9.85,4.07-3.66,4-4.53,10.37-3.4,18.42,4-4.43,7.41-11.81,12.45-11.25,7.2.8,5.58.56,12.15-3.58A28.78,28.78,0,0,0,52.9,54.35c11.59-1.8,12.91-6.54,12.91-6.54,1-2-.4-3.46-3.1-4.71C47.8,40.2,34,39.65,22.12,43.1Z" fill="#eac242"/>
+    <rect x="40.45" y="43.81" width="20.66" height="3.98" rx="1.99" ry="1.99" fill="#efce7b"/>
+    <rect x="32.89" y="43.81" width="5.53" height="3.98" rx="1.99" ry="1.99" fill="#efce7b"/>
+  </g>
+  <g id="C_arm_1">
+    <rect x="68.78" y="85.82" width="15.54" height="35.5" rx="7" ry="7" fill="#eabfa2"/>
+    <rect x="68.78" y="86.49" width="14" height="33.33" rx="7" ry="7" fill="#f4d4be"/>
+    <circle cx="67.91" cy="112.45" r="2.88" fill="#eabfa2"/>
+    <ellipse cx="68.46" cy="112.41" rx="2.67" ry="2.58" fill="#f4d4be"/>
+  </g>
+  <rect id="C_leg_1" x="56.92" y="122.23" width="13.27" height="27.85" rx="3.45" ry="3.45" fill="#ea00be"/>
+</svg>

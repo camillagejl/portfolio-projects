@@ -1,0 +1,113 @@
+<svg id="videoSVG" width="800" height="450" viewBox="0 0 800 450">
+
+    <defs>        <clipPath id="videoClip">
+        <circle id="fixer_circle" r="0.1" cx="0" cy="0"></circle>
+        <polygon id="clip1" points="20 150, 90 200, 90 430, 20 390"/>
+        <polygon id="clip2" points="110 130, 180 180, 180 410, 110 370"/>
+        <polygon id="clip3" points="200 110, 270 160, 270 390, 200 350"/>
+        <polygon id="clip4" points="290 90, 360 140, 360 370, 290 330"/>
+        <polygon id="clip5" points="380 70, 450 120, 450 350, 380 310"/>
+        <polygon id="clip6" points="470 50, 540 100, 540 330, 470 290"/>
+        <polygon id="clip7" points="560 30, 630 80, 630 310, 560 270"/>
+        <polygon id="clip7" points="650 10, 720 60, 720 290, 650 250"/>
+    </clipPath>
+        <clipPath id="clippingVideo1">
+            <use href="#fixer_circle"/>
+            <use href="#clip1"/>
+        </clipPath>
+
+        <clipPath id="clippingVideo2">
+            <use href="#fixer_circle"/>
+            <use href="#clip1"/>
+            <use href="#clip2"/>
+        </clipPath>
+
+        <clipPath id="clippingVideo3">
+            <use href="#fixer_circle"/>
+            <use href="#clip1"/>
+            <use href="#clip2"/>
+            <use href="#clip3"/>
+        </clipPath>
+
+        <clipPath id="clippingVideo4">
+            <use href="#fixer_circle"/>
+            <use href="#clip1"/>
+            <use href="#clip2"/>
+            <use href="#clip3"/>
+            <use href="#clip4"/>
+        </clipPath>
+
+        <clipPath id="clippingVideo5">
+            <use href="#fixer_circle"/>
+            <use href="#clip1"/>
+            <use href="#clip2"/>
+            <use href="#clip3"/>
+            <use href="#clip4"/>
+            <use href="#clip5"/>
+        </clipPath>
+
+        <clipPath id="clippingVideo6">
+            <use href="#fixer_circle"/>
+            <use href="#clip1"/>
+            <use href="#clip2"/>
+            <use href="#clip3"/>
+            <use href="#clip4"/>
+            <use href="#clip5"/>
+            <use href="#clip6"/>
+        </clipPath>
+
+        <clipPath id="clippingVideo7">
+            <use href="#fixer_circle"/>
+            <use href="#clip1"/>
+            <use href="#clip2"/>
+            <use href="#clip3"/>
+            <use href="#clip4"/>
+            <use href="#clip5"/>
+            <use href="#clip6"/>
+            <use href="#clip7"/>
+        </clipPath>
+
+        <style>
+            .animateMe {
+            <!--             clip-path: url(#clippingVideo1); -->
+            animation-name: animate_kf;
+            animation-duration: 2s;
+            animation-iteration-count: 1;
+            transition-timing-function: ease;
+            }
+            @keyframes animate_kf {
+            0% {
+            clip-path: url(#clippingVideo1);
+            }
+            16% {
+            clip-path: url(#clippingVideo2);
+            }
+            30% {
+            clip-path: url(#clippingVideo3);
+            }
+            44% {
+            clip-path: url(#clippingVideo4);
+            }
+            58% {
+            clip-path: url(#clippingVideo5);
+            }
+            72% {
+            clip-path: url(#clippingVideo6);
+            }
+            86% {
+            clip-path: url(#clippingVideo7);
+            }
+            100% {
+            clip-path: url(#videoClip);
+            }
+            }
+        </style>
+    </defs>
+
+    <!--  VIDEO  -->
+    <foreignObject class="animateMe" clip-path="url(#videoClip)" id="thisVideoThing" width="800" height="450">
+        <video autoplay="true" muted="true" width="100%">
+            <source src="elements/camilla_video.mp4"/>
+        </video>
+    </foreignObject>
+</svg>

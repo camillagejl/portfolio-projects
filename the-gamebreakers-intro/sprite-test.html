@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+</head>
+<style>
+    #character {
+        animation-name: julie;
+        animation-duration: 2.5s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+        animation-timing-function: steps(3);
+        animation-direction: reverse;
+        display: inline-block;
+        position: absolute;
+        background-image: url(elements/Julie_animeret.svg);
+        height: 38vw;
+        width: 20vw;
+        top: 22vw;
+        left: 22vw;
+        background-size: 300% 100%;
+    }
+
+    @keyframes julie {
+        0% {
+            background-position: 0 0;
+        }
+        100% {
+            background-position: -300% 0;
+        }
+    }
+</style>
+<body>
+<div id="character"></div>
+</body>
+</html>

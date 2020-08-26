@@ -1,0 +1,180 @@
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" width="428.4" height="140.65" viewBox="0 0 428.4 140.65">
+  <title>Julie</title>
+  <g>
+    <g id="J_arm">
+      <path d="M43.34,108.3l-1.08-1.09a7,7,0,0,1,0-9.9L57.47,82.13a7,7,0,0,1,9.87,0l1.08,1.09a7,7,0,0,1,0,9.9L53.21,108.32A7,7,0,0,1,43.34,108.3Z" fill="#eabfa2"/>
+      <path d="M43,105.78h0a6.51,6.51,0,0,1,0-9.16L57.36,82.23a6.47,6.47,0,0,1,9.14,0h0a6.51,6.51,0,0,1,0,9.16L52.09,105.8A6.47,6.47,0,0,1,43,105.78Z" fill="#f4e4d9"/>
+    </g>
+    <path id="sword_shadow" d="M42.92,94.6l-1.87,2.49a3.92,3.92,0,0,1-5.51.77L3.69,73.77a4,4,0,0,1-.77-5.52l1.87-2.49A3.92,3.92,0,0,1,10.3,65L42.15,89.08A4,4,0,0,1,42.92,94.6Z" fill="#91d1db"/>
+    <path id="Sword_blade" d="M41.28,96.28l-.73,1A3.92,3.92,0,0,1,35,98L3.19,73.93a4,4,0,0,1-.77-5.52l.73-1a3.92,3.92,0,0,1,5.51-.77L40.51,90.76A4,4,0,0,1,41.28,96.28Z" fill="#b5e5ea"/>
+    <path id="sword_handle_2" d="M48.73,90.61l-9.91,13.17a4.74,4.74,0,0,1-6.63.93h0a4.77,4.77,0,0,1-.93-6.65l9.91-13.17A4.74,4.74,0,0,1,47.8,84h0A4.77,4.77,0,0,1,48.73,90.61Z" fill="#d3a629"/>
+    <path id="sword_handle_1" d="M43.1,91,56.24,101a4.77,4.77,0,0,1,.93,6.65h0a4.74,4.74,0,0,1-6.63.93L37.39,98.63A4.77,4.77,0,0,1,36.46,92h0A4.74,4.74,0,0,1,43.1,91Z" fill="#d3a629"/>
+  </g>
+  <rect id="J_leg_shadow" x="235.49" y="107.37" width="14.75" height="31.95" rx="3.45" ry="3.45" fill="#9e0000"/>
+  <rect x="209.73" y="107.37" width="14.75" height="31.95" rx="3.45" ry="3.45" fill="#9e0000"/>
+  <rect id="J_leg_2" x="209.73" y="111.29" width="13.27" height="27.85" rx="3.45" ry="3.45" fill="#cf3638"/>
+  <g id="J_horn_2">
+    <rect x="179.77" y="23.67" width="25.46" height="14.45" rx="6.43" ry="6.43" transform="translate(385 61.79) rotate(-180)" fill="#dddaba"/>
+    <g>
+      <rect x="171.7" y="18.67" width="25.46" height="13.03" rx="6.43" ry="6.43" transform="translate(159.24 209.61) rotate(-90)" fill="#dddaba"/>
+      <path d="M178.08,17.44V4.58a20.6,20.6,0,0,1,12.62,12.5Z" fill="#dddaba"/>
+    </g>
+    <g>
+      <rect x="175.79" y="18.67" width="15.61" height="7.99" rx="3.99" ry="3.99" transform="translate(160.94 206.26) rotate(-90)" fill="#f9f9f9"/>
+      <path d="M179.71,17.91V10a12.63,12.63,0,0,1,7.74,7.66Z" fill="#f9f9f9"/>
+    </g>
+  </g>
+  <g id="J_arm-2" data-name="J_arm">
+    <rect x="191.23" y="75.46" width="15.54" height="35.5" rx="7" ry="7" transform="translate(233.6 -123.79) rotate(73.96)" fill="#eabfa2"/>
+    <rect x="192.57" y="75.19" width="12.96" height="33.33" rx="6.48" ry="6.48" transform="translate(232.33 -124.82) rotate(73.96)" fill="#f4e4d9"/>
+  </g>
+  <g id="J_body">
+    <rect x="205.06" y="64.47" width="52.8" height="57.5" rx="12" ry="12" fill="#9e0000"/>
+    <rect x="204.52" y="67.73" width="48.69" height="53.02" rx="12" ry="12" fill="#cf3638"/>
+  </g>
+  <rect id="J_face_shadow" x="190.23" y="36.78" width="75.78" height="38.96" rx="19.48" ry="19.48" fill="#eabfa2"/>
+  <rect id="J_face" x="190.33" y="36.78" width="65.95" height="38.96" rx="19.48" ry="19.48" fill="#f4e4d9"/>
+  <ellipse id="J_eye_2" cx="203.23" cy="56.18" rx="3.87" ry="5.52"/>
+  <ellipse id="J_eye_1" cx="238.15" cy="55.98" rx="3.87" ry="5.32"/>
+  <ellipse id="J_hair_2" cx="256.28" cy="48.81" rx="9.16" ry="14.79" transform="translate(9.93 134.68) rotate(-30)" fill="#77190a"/>
+  <g id="helmet">
+    <path d="M223.22,64V44.77h41.56V28.47C258.62,9.36,243.71-1,228.79.89c-18.51,2.56-31.38,10.5-35.56,26.74V44.77l19.71.42L212.51,64Z" fill="#055fa3"/>
+    <path d="M220.54,62.76V44.26h38V28.57C252.89,10.18,239.27.24,225.63,2c-16.92,2.47-28.69,10.11-32.5,25.74V44.26l18,.4-.39,18.1Z" fill="#1c7ce5"/>
+    <path d="M217.86,6.65c-9.5,3.25-16.87,8.11-20.67,15.67-.84,4.2.58,6.2,5.67,4.67,5-10.16,12.56-14.86,21.24-17.25C223.37,6.5,221.2,5.63,217.86,6.65Z" fill="#60a9ea"/>
+  </g>
+  <g id="horn_1">
+    <rect x="252.05" y="23.87" width="25.46" height="14.45" rx="6.43" ry="6.43" fill="#dddaba"/>
+    <rect x="260.13" y="18.87" width="25.46" height="13.03" rx="6.43" ry="6.43" transform="translate(247.47 298.24) rotate(-90)" fill="#dddaba"/>
+    <path d="M279.2,17.64V4.78a20.6,20.6,0,0,0-12.62,12.5Z" fill="#dddaba"/>
+    <g id="horn_highlight_1">
+      <rect x="265.88" y="18.87" width="15.61" height="7.99" rx="3.99" ry="3.99" transform="translate(250.82 296.54) rotate(-90)" fill="#f9f9f9"/>
+      <path d="M277.57,18.11V10.23a12.63,12.63,0,0,0-7.74,7.66Z" fill="#f9f9f9"/>
+    </g>
+  </g>
+  <rect id="sword_shadow-2" data-name="sword_shadow" x="171.69" y="41.5" width="11" height="47.89" rx="3.94" ry="3.94" transform="translate(-11.27 78.14) rotate(-24.13)" fill="#91d1db"/>
+  <rect id="Sword_blade-2" data-name="Sword_blade" x="171.25" y="41.79" width="9.1" height="47.89" rx="3.94" ry="3.94" transform="translate(-11.51 77.6) rotate(-24.13)" fill="#b5e5ea"/>
+  <rect id="sword_handle_2-2" data-name="sword_handle_2" x="172.96" y="80.26" width="26" height="9.5" rx="4.75" ry="4.75" transform="translate(-18.51 83.43) rotate(-24.13)" fill="#d3a629"/>
+  <rect id="sword_handle_1-2" data-name="sword_handle_1" x="176.3" y="88.35" width="26" height="9.5" rx="4.75" ry="4.75" transform="translate(181.71 303.93) rotate(-114.13)" fill="#d3a629"/>
+  <path id="J_hair_1" d="M262.85,47.25c4.23,10.53,10.27,16,18.09,16.36-6.9,5.63-14.63,8.8-24.42,6.13C261.79,66,263,57.39,262.85,47.25Z" fill="#77190a"/>
+  <rect id="J_leg_1" x="235.04" y="111.29" width="13.27" height="27.85" rx="3.45" ry="3.45" fill="#cf3638"/>
+  <rect id="J_leg_shadow-2" data-name="J_leg_shadow" x="89.31" y="107.37" width="14.71" height="31.95" rx="3.45" ry="3.45" fill="#9e0000"/>
+  <rect x="63.62" y="107.37" width="14.71" height="31.95" rx="3.45" ry="3.45" fill="#9e0000"/>
+  <rect id="J_leg_2-2" data-name="J_leg_2" x="63.62" y="111.29" width="13.23" height="27.85" rx="3.45" ry="3.45" fill="#cf3638"/>
+  <g id="J_horn_2-2" data-name="J_horn_2">
+    <rect x="33.74" y="23.67" width="25.39" height="14.45" rx="6.43" ry="6.43" transform="translate(92.87 61.79) rotate(-180)" fill="#dddaba"/>
+    <g>
+      <rect x="25.65" y="18.69" width="25.46" height="12.99" rx="6.43" ry="6.43" transform="translate(13.19 63.56) rotate(-90)" fill="#dddaba"/>
+      <path d="M32,17.44V4.58a20.57,20.57,0,0,1,12.58,12.5Z" fill="#dddaba"/>
+    </g>
+    <g>
+      <rect x="29.75" y="18.68" width="15.61" height="7.97" rx="3.98" ry="3.98" transform="translate(14.9 60.21) rotate(-90)" fill="#f9f9f9"/>
+      <path d="M33.67,17.91V10a12.61,12.61,0,0,1,7.71,7.66Z" fill="#f9f9f9"/>
+    </g>
+  </g>
+  <g id="J_body-2" data-name="J_body">
+    <rect x="58.96" y="64.47" width="52.66" height="57.5" rx="12" ry="12" fill="#9e0000"/>
+    <rect x="58.42" y="67.73" width="48.56" height="53.02" rx="12" ry="12" fill="#cf3638"/>
+  </g>
+  <rect id="J_face_shadow-2" data-name="J_face_shadow" x="44.16" y="36.78" width="75.58" height="38.96" rx="19.48" ry="19.48" fill="#eabfa2"/>
+  <rect id="J_face-2" data-name="J_face" x="44.27" y="36.78" width="65.77" height="38.96" rx="19.48" ry="19.48" fill="#f4e4d9"/>
+  <ellipse id="J_eye_2-2" data-name="J_eye_2" cx="57.13" cy="56.18" rx="3.86" ry="5.52"/>
+  <ellipse id="J_eye_1-2" data-name="J_eye_1" cx="91.96" cy="55.98" rx="3.86" ry="5.32"/>
+  <path id="J_hair_2-2" data-name="J_hair_2" d="M118,44.23c4.07,7.07,3.84,14.86-.53,17.39s-11.21-1.16-15.29-8.23S98.3,38.53,102.67,36,113.88,37.16,118,44.23Z" fill="#77190a"/>
+  <g id="helmet-2" data-name="helmet">
+    <path d="M77.07,64V44.77h41.45V28.47C112.37,9.36,97.51-1,82.63.89,64.16,3.46,51.33,11.4,47.16,27.64V44.77l19.65.42L66.39,64Z" fill="#055fa3"/>
+    <path d="M74.39,62.76V44.26h37.88V28.57C106.66,10.18,93.07.24,79.47,2,62.6,4.49,50.86,12.14,47.06,27.77V44.26l18,.4-.39,18.1Z" fill="#1c7ce5"/>
+    <path d="M71.72,6.65C62.25,9.9,54.9,14.76,51.11,22.32c-.84,4.2.58,6.2,5.65,4.67,5-10.16,12.52-14.86,21.19-17.25C77.22,6.5,75.05,5.63,71.72,6.65Z" fill="#60a9ea"/>
+  </g>
+  <g id="horn_1-2" data-name="horn_1">
+    <rect x="105.82" y="23.87" width="25.39" height="14.45" rx="6.43" ry="6.43" fill="#dddaba"/>
+    <rect x="113.84" y="18.89" width="25.46" height="12.99" rx="6.43" ry="6.43" transform="translate(101.18 151.96) rotate(-90)" fill="#dddaba"/>
+    <path d="M132.9,17.64V4.78a20.57,20.57,0,0,0-12.58,12.5Z" fill="#dddaba"/>
+    <g id="horn_highlight_1-2" data-name="horn_highlight_1">
+      <rect x="119.59" y="18.88" width="15.61" height="7.97" rx="3.98" ry="3.98" transform="translate(104.54 150.26) rotate(-90)" fill="#f9f9f9"/>
+      <path d="M131.28,18.11V10.23a12.61,12.61,0,0,0-7.71,7.66Z" fill="#f9f9f9"/>
+    </g>
+  </g>
+  <g id="Shield">
+    <g>
+      <path d="M130,93.72a19.31,19.31,0,0,1-19.29,19.34h-.42A19.34,19.34,0,1,1,130,93.72Z" fill="#055fa3"/>
+      <polygon points="130.01 94.09 91.43 94.09 91.43 71.7 110.72 71.7 130.01 71.7 130.01 94.09" fill="#055fa3"/>
+    </g>
+    <path d="M91.43,71.7h19.1a0,0,0,0,1,0,0v41.23a0,0,0,0,1,0,0h-1.65A17.45,17.45,0,0,1,91.43,95.49V71.7A0,0,0,0,1,91.43,71.7Z" fill="#1c7ce5"/>
+  </g>
+  <path id="J_hair_1-2" data-name="J_hair_1" d="M119.58,48.25c4.22,10.53,10.24,16,18,16.36-6.88,5.63-14.59,8.8-24.35,6.13C118.53,67,119.7,58.39,119.58,48.25Z" fill="#77190a"/>
+  <rect id="shield_highlight" x="122.38" y="77.64" width="4.97" height="18.36" rx="2.48" ry="2.48" fill="#1c7ce5"/>
+  <rect id="J_leg_1-2" data-name="J_leg_1" x="88.86" y="111.29" width="13.23" height="27.85" rx="3.45" ry="3.45" fill="#cf3638"/>
+  <rect id="J_leg_shadow-3" data-name="J_leg_shadow" x="374.72" y="108.1" width="14.75" height="31.95" rx="3.45" ry="3.45" fill="#9e0000"/>
+  <rect x="348.97" y="108.1" width="14.75" height="31.95" rx="3.45" ry="3.45" fill="#9e0000"/>
+  <rect id="J_leg_2-3" data-name="J_leg_2" x="348.97" y="112.02" width="13.27" height="27.85" rx="3.45" ry="3.45" fill="#cf3638"/>
+  <g id="J_horn_2-3" data-name="J_horn_2">
+    <rect x="319" y="24.4" width="25.46" height="14.45" rx="6.43" ry="6.43" transform="translate(663.47 63.25) rotate(-180)" fill="#dddaba"/>
+    <g>
+      <rect x="310.93" y="19.4" width="25.46" height="13.03" rx="6.43" ry="6.43" transform="translate(297.74 349.58) rotate(-90)" fill="#dddaba"/>
+      <path d="M317.31,18.17V5.31a20.6,20.6,0,0,1,12.62,12.5Z" fill="#dddaba"/>
+    </g>
+    <g>
+      <rect x="315.03" y="19.4" width="15.61" height="7.99" rx="3.99" ry="3.99" transform="translate(299.44 346.22) rotate(-90)" fill="#f9f9f9"/>
+      <path d="M318.94,18.64V10.76a12.63,12.63,0,0,1,7.74,7.66Z" fill="#f9f9f9"/>
+    </g>
+  </g>
+  <g id="J_arm-3" data-name="J_arm">
+    <rect x="325.61" y="75.31" width="15.54" height="35.5" rx="7" ry="7" transform="translate(485.26 -217.97) rotate(100.43)" fill="#eabfa2"/>
+    <rect x="327.55" y="75.2" width="12.96" height="33.33" rx="6.48" ry="6.48" transform="translate(484.85 -220.01) rotate(100.43)" fill="#f4e4d9"/>
+  </g>
+  <g id="J_body-3" data-name="J_body">
+    <rect x="344.29" y="65.2" width="52.8" height="57.5" rx="12" ry="12" fill="#9e0000"/>
+    <rect x="343.75" y="68.46" width="48.69" height="53.02" rx="12" ry="12" fill="#cf3638"/>
+  </g>
+  <rect id="J_face_shadow-3" data-name="J_face_shadow" x="329.46" y="37.51" width="75.78" height="38.96" rx="19.48" ry="19.48" fill="#eabfa2"/>
+  <rect id="J_face-3" data-name="J_face" x="329.57" y="37.51" width="65.95" height="38.96" rx="19.48" ry="19.48" fill="#f4e4d9"/>
+  <ellipse id="J_eye_2-3" data-name="J_eye_2" cx="342.46" cy="56.91" rx="3.87" ry="5.52"/>
+  <ellipse id="J_eye_1-3" data-name="J_eye_1" cx="377.38" cy="56.71" rx="3.87" ry="5.32"/>
+  <ellipse id="J_hair_2-3" data-name="J_hair_2" cx="395.51" cy="49.54" rx="9.16" ry="14.79" transform="translate(28.22 204.39) rotate(-30)" fill="#77190a"/>
+  <g id="helmet-3" data-name="helmet">
+    <path d="M362.45,64.72V45.5H404V29.2C397.85,10.09,382.95-.23,368,1.63c-18.51,2.56-31.38,10.5-35.56,26.74V45.5l19.71.42-.43,18.8Z" fill="#055fa3"/>
+    <path d="M359.77,63.49V45h38V29.3C392.12,10.91,378.5,1,364.86,2.76c-16.92,2.47-28.69,10.11-32.5,25.74V45l18,.4L350,63.49Z" fill="#1c7ce5"/>
+    <path d="M357.09,7.39c-9.5,3.25-16.87,8.11-20.67,15.67-.84,4.2.58,6.2,5.67,4.67,5-10.16,12.56-14.86,21.24-17.25C362.61,7.24,360.43,6.36,357.09,7.39Z" fill="#60a9ea"/>
+  </g>
+  <g id="horn_1-3" data-name="horn_1">
+    <rect x="391.28" y="24.61" width="25.46" height="14.45" rx="6.43" ry="6.43" fill="#dddaba"/>
+    <rect x="399.36" y="19.61" width="25.46" height="13.03" rx="6.43" ry="6.43" transform="translate(385.97 438.21) rotate(-90)" fill="#dddaba"/>
+    <path d="M418.43,18.37V5.51A20.6,20.6,0,0,0,405.82,18Z" fill="#dddaba"/>
+    <g id="horn_highlight_1-3" data-name="horn_highlight_1">
+      <rect x="405.11" y="19.6" width="15.61" height="7.99" rx="3.99" ry="3.99" transform="translate(389.32 436.51) rotate(-90)" fill="#f9f9f9"/>
+      <path d="M416.81,18.84V11a12.63,12.63,0,0,0-7.74,7.66Z" fill="#f9f9f9"/>
+    </g>
+  </g>
+  <rect id="sword_shadow-3" data-name="sword_shadow" x="320.74" y="34.53" width="11" height="47.89" rx="3.94" ry="3.94" transform="translate(2.66 -13.29) rotate(2.34)" fill="#91d1db"/>
+  <rect id="Sword_blade-3" data-name="Sword_blade" x="320.32" y="34.17" width="9.1" height="47.89" rx="3.94" ry="3.94" transform="translate(2.65 -13.23) rotate(2.34)" fill="#b5e5ea"/>
+  <rect id="sword_handle_2-3" data-name="sword_handle_2" x="312.36" y="75.15" width="26" height="9.5" rx="4.75" ry="4.75" transform="translate(3.54 -13.24) rotate(2.34)" fill="#d3a629"/>
+  <rect id="sword_handle_1-3" data-name="sword_handle_1" x="311.75" y="83.89" width="26" height="9.5" rx="4.75" ry="4.75" transform="matrix(0.04, -1, 1, 0.04, 222.91, 409.5)" fill="#d3a629"/>
+  <path id="J_hair_1-3" data-name="J_hair_1" d="M405.08,49c4.23,10.53,10.27,16,18.09,16.36-6.9,5.63-14.63,8.8-24.42,6.13C404,67.73,405.19,59.12,405.08,49Z" fill="#77190a"/>
+  <rect id="J_leg_1-3" data-name="J_leg_1" x="374.28" y="112.02" width="13.27" height="27.85" rx="3.45" ry="3.45" fill="#cf3638"/>
+  <g>
+    <g id="Shield-2" data-name="Shield">
+      <g>
+        <path d="M410.53,100.45a19.34,19.34,0,0,1-19.34,19.34h-.42a19.34,19.34,0,1,1,19.76-19.33Z" fill="#055fa3"/>
+        <polygon points="410.53 100.82 371.85 100.82 371.85 78.43 391.19 78.43 410.53 78.43 410.53 100.82" fill="#055fa3"/>
+      </g>
+      <path d="M371.85,78.43H391a0,0,0,0,1,0,0v41.23a0,0,0,0,1,0,0h-1.7a17.45,17.45,0,0,1-17.45-17.45V78.43A0,0,0,0,1,371.85,78.43Z" fill="#1c7ce5"/>
+    </g>
+    <rect id="shield_highlight-2" data-name="shield_highlight" x="402.88" y="84.38" width="4.98" height="18.36" rx="2.49" ry="2.49" fill="#1c7ce5"/>
+  </g>
+  <g id="Shield-3" data-name="Shield">
+    <g>
+      <path d="M276.3,90.72A19.34,19.34,0,0,1,257,110.06h-.42A19.34,19.34,0,1,1,276.3,90.72Z" fill="#055fa3"/>
+      <polygon points="276.3 91.09 237.62 91.09 237.62 68.7 256.96 68.7 276.3 68.7 276.3 91.09" fill="#055fa3"/>
+    </g>
+    <path d="M237.62,68.7h19.15a0,0,0,0,1,0,0v41.23a0,0,0,0,1,0,0h-1.7a17.45,17.45,0,0,1-17.45-17.45V68.7A0,0,0,0,1,237.62,68.7Z" fill="#1c7ce5"/>
+  </g>
+  <rect id="shield_highlight-3" data-name="shield_highlight" x="268.65" y="75.64" width="4.98" height="18.36" rx="2.49" ry="2.49" fill="#1c7ce5"/>
+  <rect x="195" y="58.98" width="14" height="5.01" fill="#f4e4d9"/>
+  <rect x="230.62" y="58.8" width="14" height="5.01" fill="#f4e4d9"/>
+  <rect x="230.62" y="48.79" width="14" height="5.01" fill="#f4e4d9"/>
+  <rect x="196.23" y="48.79" width="14" height="5.01" fill="#f4e4d9"/>
+  <rect x="337" y="48.79" width="11" height="7.47" fill="#f4e4d9"/>
+  <rect x="336.96" y="58.7" width="11" height="7.47" fill="#f4e4d9"/>
+  <rect x="371.54" y="58.3" width="11" height="7.47" fill="#f4e4d9"/>
+  <rect x="371.88" y="48.79" width="11" height="7.47" fill="#f4e4d9"/>
+</svg>
