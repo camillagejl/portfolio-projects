@@ -1,0 +1,8 @@
+<svg id="Assets" xmlns="http://www.w3.org/2000/svg" width="398.83" height="401" viewBox="0 0 398.83 401">
+  <title>deathBySuicide</title>
+  <rect x="177.89" y="125.67" width="60.83" height="19.26" rx="9.5" ry="9.5"/>
+  <rect x="177.89" y="105.39" width="60.83" height="19.26" rx="9.5" ry="9.5"/>
+  <rect x="177.89" y="146.39" width="60.83" height="19.26" rx="9.5" ry="9.5"/>
+  <ellipse cx="191.5" cy="275.05" rx="108.95" ry="80" transform="translate(-109.13 423.19) rotate(-81.39)" fill="none" stroke="#000" stroke-miterlimit="10" stroke-width="21"/>
+  <path d="M377,7c3.88,16.74,4.57,31.11-13,32-35.8,2-81.11-15.86-92-19-35.71-10.3-81.9,14-68,59,13.65,44.23,3,96,3,96" fill="none" stroke="#000" stroke-miterlimit="10" stroke-width="24"/>
+</svg>

@@ -1,0 +1,1 @@
+# [View the Timeline of Death Note Fatalities](https://camillagejl.com/kea/3-semester/theme13/death_note_timeline/)

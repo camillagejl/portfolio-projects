@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="names.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Caveat:400,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="favicon/favicon-16x16.png"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:300i&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="manifest" href="/site.webmanifest" />
+    <title>A Timeline of Death Note fatalities</title>
+  </head>
+  <body>
+    <audio src="audio/Lstheme.mp3" id="l_theme" loop></audio>
+
+    <div class="background_video_container">
+      <video autoplay muted loop class="background_video">
+        <source src="elements/background_video_edit.mp4" type="video/mp4" />
+      </video>
+    </div>
+
+    <div class="music">
+      <img
+        src="elements/Music_knap_off.svg"
+        class="music_off_button"
+        alt="Music off button"
+      />
+      <img
+        src="elements/Music_knap_on.svg"
+        class="music_on_button"
+        alt="Music on button"
+      />
+    </div>
+
+    <div class="section_container">
+      <div class="headline"></div>
+      <div class="apple"></div>
+    </div>
+
+    <div class="section_container">
+      <div class="rules observe_this fade_in">
+        <div class="bloodstain_note"></div>
+
+        <p>Rule #1:</p>
+        <p>
+          The human whose name is written in this note shall die.
+        </p>
+      </div>
+    </div>
+
+    <div class="section_container book_section">
+        <div class="close_button">
+            <img src="elements/close_button.svg" alt="Exit button to close infobox">
+        </div>
+      <div class="close_infobox_div"></div>
+      <div class="book_container">
+        <div class="close_infobox_div mobile"></div>
+        <div class="book_content_container">
+          <div class="book_timeline"></div>
+          <div class="book_infobox"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ----- TEMPLATES ----- -->
+
+    <!-- Timeline item template -->
+    <template class="timeline_template">
+      <div class="fatality_item_container observe_this">
+        <div class="observation_content">.</div>
+        <div class="fatality_item">
+          <div class="timeline_item">
+            <div class="timeline_icon_container">
+              <img
+                class="timeline_icon center"
+                src="http://placehold.it/40x60"
+                alt="Icon representing the death cause"
+              />
+            </div>
+            <div class="timeline_text_container">
+              <div class="timeline_name">Light Yagami</div>
+              <div class="timeline_death_date">01/01/2001</div>
+            </div>
+          </div>
+        </div>
+        <div class="timeline_line_container">
+          <div class="timeline_line"></div>
+        </div>
+      </div>
+    </template>
+
+    <template class="infobox_template">
+      <div class="infobox">
+        <div class="infobox_image_container"></div>
+        <div class="infobox_name">
+          <img class="infobox_name_image" src="" />
+        </div>
+        <div class="infobox_details infobox_birth_date">
+          <b>Date of birth: </b>
+        </div>
+        <div class="infobox_details infobox_death_date">
+          <b>Date of death: </b>
+        </div>
+        <div class="infobox_details infobox_story">
+          <b>Story: </b>
+        </div>
+        <div class="infobox_details infobox_death_cause">
+          <b>Cause of death: </b>
+        </div>
+      </div>
+    </template>
+
+    <template class="infobox_template">
+      <div class="infobox">
+        <div class="infobox_image_container"></div>
+        <div class="infobox_name">
+          <img class="infobox_name_image" src="" />
+        </div>
+        <div class="infobox_details infobox_birth_date">
+          <b>Date of birth: </b>
+        </div>
+        <div class="infobox_details infobox_death_date">
+          <b>Date of death: </b>
+        </div>
+        <div class="infobox_details infobox_story">
+          <b>Story: </b>
+        </div>
+        <div class="infobox_details infobox_death_cause">
+          <b>Cause of death: </b>
+        </div>
+      </div>
+    </template>
+
+    <footer>
+      <div class="footer_content">
+        <div id="bloodstain"></div>
+        <h2>About this timeline</h2>
+        <h3>Notes:</h3>
+        <p>
+          The dates in this timeline have been found at
+          <a href="https://deathnote.fandom.com/" target="_blank"
+            >Death Note Wiki</a
+          >.
+        </p>
+        <p>
+          The dates, stories and death causes are those from the anime, not the
+          manga or the films.
+        </p>
+        <h3>Copyrights:</h3>
+        <p>
+          The background video is the intro to the first season of the Death
+          Note anime.
+        </p>
+        <p>
+          The music is "L's theme" from the Death Note anime.
+        </p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
