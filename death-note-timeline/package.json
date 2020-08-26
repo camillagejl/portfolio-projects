@@ -1,0 +1,27 @@
+{
+  "name": "14c.04.01_animation_project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "minify": "npm run minify-js && npm run minify-css && npm run minify-names-css && npm run minify-html",
+    "minify-js": "minify script.js > dist/script.js",
+    "minify-html": "minify index.html > dist/index.html",
+    "minify-css": "minify style.css > dist/style.css",
+    "minify-names-css": "minify names.css > dist/names.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cami32d9/14c.04.01_animation_project.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cami32d9/14c.04.01_animation_project/issues"
+  },
+  "homepage": "https://github.com/cami32d9/14c.04.01_animation_project#readme",
+  "devDependencies": {
+    "minify": "^4.1.3"
+  }
+}
