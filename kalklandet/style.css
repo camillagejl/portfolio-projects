@@ -1,0 +1,601 @@
+/*1. GENERAL*/
+/*Variabler, fonte, design af header+footer, buttons osv.*/
+
+/*2. HEADER*/
+/*Styling af headeren (indebærer IKKE farve)*/
+
+/*3. FOOTER*/
+/*Styling af footeren (indebærer IKKE farve)*/
+
+/*4. MAIN*/
+/*Styling af main indholdet på siden*/
+
+/*5. HELPERS*/
+/*Flex-boxe, borders, .hidden osv.*/
+
+/*6. MEDIA QUERIES*/
+/*Media queries for at scale fra mobil til tablet til desktop
+(i hvert fald i teorien - lige nu er designet 50/50 mobile/desktop first);*/
+
+
+
+/*
+
+----- NOTER! Mobile first! -0----
+
+Husk, at sitet er mobile first - dvs., at hvis nogle af tingene ikke ændrer sig på desktop, når I ændrer i koden, kan
+det være fordi I skal ændre i en mediaquery for classen i stedet. Eksempelvis er nav og sub_navigation meget anderledes
+i den "originale" kode (mobile forst), end den er i mediaqueries for desktop.
+
+ */
+
+
+/*----- 1. GENERAL -----*/
+
+:root { /* Variabler, som kan ændres, så de ændres alle steder i koden, hvor de er brugt*/
+    --page-margin: 10px; /*Gøres større på desktop med en media query*/
+    --main-border-radius: 3px;
+    --main-body-font: 'Open Sans', sans-serif;
+    --main-heading-font: LimeStone, Arial, Arial, Helvetica, Roboto, sans-serif;
+    --kalklandet-main-color: #fe6400; /*den orange farve fra originalt design*/
+    --kalklandet-main-color-transparent: rgba(254, 100, 0, 0.5); /*den orange farve, gennemsigtig*/
+}
+
+@font-face {
+    font-family: 'LimeStone';
+    src: url('fonts/LimeStone_regular.otf'),
+    url('fonts/LimeStone_light.otf'),
+    url('fonts/LimeStone_heavy.otf'),
+    url('fonts/LimeStone_bold.otf');
+}
+
+html {
+    font-family: var(--main-body-font);
+}
+
+p {
+    line-height: 2rem;
+    margin-top: 0;
+}
+
+.page_title,
+.mobile_page_title,
+h1,
+h2,
+h3 {
+    font-family: var(--main-heading-font);
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-top: 0;
+}
+
+h3 {
+    margin: 0;
+    padding: 0;
+    line-height: 2rem;
+}
+
+h4 {
+    margin: 0 0 8px 0;
+}
+
+.kalklandet { /*baggrundsfarve på footer på Kalklandet-sider*/
+    background-color: #dcd8d6;
+    color: black;
+}
+
+.kalklandet a {
+    color: #fe6400;
+}
+
+header.kalklandet { /*header med baggrundsbillede på alle Kalklandet-sider*/
+    background-image: url("elements/kalklandet_header.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+header.kalklandet a {
+    color: black;
+}
+
+.stevnsfort { /*baggrundsfarve og tekstfarve på main design på Stevnsfort-sider*/
+    background-color: #377288;
+    color: white;
+}
+
+.stevns_klint { /*baggrundsfarve og tekstfarve på main design på Stevns Klint-sider*/
+    background-color: #0082ad;
+    color: white;
+}
+
+footer .geomuseum a {
+    color: #ffda74;
+}
+
+.geomuseum { /*baggrundsfarve og tekstfarve på main design på Geomuseum Faxr-sider*/
+    background-color: #19a7a2;
+    color: white;
+}
+
+button { /*al styling fra standard buttons fjernes*/
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-family: var(--main-heading-font);
+}
+
+nav button,
+.sub_navigation button {
+    font-size: 1.2rem;
+    padding: 5px 0;
+    flex: 1;
+    border-radius: var(--main-border-radius);
+    text-transform: uppercase; /*gør al tekst i buttons uppercase, selvom det ikke er i HTML*/
+}
+
+.sub_navigation button {
+    width: 100%; /*for at knappen fylder hvad den kan, i stedet for kun at være så bred som teksten*/
+    text-align: center;
+    color: white;
+}
+
+button:hover {
+    background-color: var(--kalklandet-main-color-transparent);
+    border-radius: var(--main-border-radius);
+}
+
+.button_chosen { /*tilføjes til menupunktet for den side, der er valgt*/
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+nav .button_chosen {/*som ovenstående - men skal være mindre gennemsigtig (0.5 i stedet for 0.2)*/
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+a {
+    text-decoration: underline;
+    color: var(--kalklandet-main-color)
+}
+
+body {
+    margin: 0; /*for at undgå 8px automatisk margin*/
+    overflow-y: scroll; /*viser scrollbar selvom siden ikke er lang nok, så ting ikke hopper*/
+    display: flex;
+    min-height: 100vh; /*for at footeren altid er i bunden, selvom siden er kort*/
+    flex-direction: column;
+}
+
+img {
+    width: 100%;
+    align-self: center; /*for at undgå at billeder strækker i flex*/
+    display: block; /*for at undgå white space under billede*/
+    border-radius: var(--main-border-radius);
+}
+
+ul { /*lister - denne er kun stylet til brug i footer og sub navigation*/
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+
+/*----- 2. HEADER -----*/
+
+header {
+    padding: var(--page-margin) var(--page-margin) 30px var(--page-margin);
+}
+
+.header_content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header_img {
+    max-width: 70%;
+}
+
+.burger_icon { /*får burger-ikonet til at være helt til højre*/
+    display: flex;
+    justify-content: flex-end;
+}
+
+.burger_icon img {
+    width: 50px;
+    padding: 0 3px;
+    background-color: rgba(255, 255, 255, 0.15);
+    border-radius: 7px;
+    z-index: 1000; /*sørger for, at ikonet altid liger "øverst" - altså også er synlig, når menuerne er åbne*/
+}
+
+.burger_menu { /*skal være skjult, indtil man trykker på burger ikon*/
+    display: none;
+}
+
+nav { /*navigation i headeren*/
+    height: fit-content;
+    display: flex;
+    justify-content: space-between;
+    border-radius: var(--main-border-radius);
+    flex-direction: column;
+}
+
+.nav_bar { /*inkluderer header-menu og search*/
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding-top: 20vh;
+    height: 80vh;
+    width: 50vw;
+    background-color: #dcd8d6;
+    align-items: center;
+}
+
+.search {
+    flex: 1;
+    height: fit-content;
+    padding: 10px;
+    margin: 30px;
+    background-color: white;
+    color: grey;
+    border-radius: var(--main-border-radius);
+}
+
+.nav_container { /*indebører nav_bar og page_title*/
+    flex: 2.5;
+    margin-left: 30px;
+}
+
+.attraction_menu { /*indebærer attraktions-knappen og dropdown, så det hele fungerer med hover*/
+    flex: 1;
+    position: relative;
+    height: inherit;
+}
+
+.attraction_menu button{
+    width: 100%;
+}
+
+.attraction_dropdown {
+    color: black;
+    border-radius: var(--main-border-radius)
+}
+
+.page_title { /*er skjult i mobile, da den aligner med desktop-navigationen*/
+    font-size: 2.4rem;
+    margin-top: 50px;
+    color: white;
+    display: none;
+}
+
+.mobile_page_title {/*titlen på mobilen, som står i midten af headeren*/
+    font-size: 2.4rem;
+    margin-top: 50px;
+    text-align: center;
+    color: white;
+}
+
+header a {/*gælder buttons til "fake" sider (nyheder osv.), da de har links i HTML-koden og ikke javaScript*/
+    text-decoration: none;
+    color: inherit;
+}
+
+
+/*----- 3. FOOTER -----*/
+
+footer {
+    padding: var(--page-margin);
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+}
+
+.footer_block {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0;
+}
+
+.footer_follow {
+    height: inherit;
+    justify-content: flex-end;
+    align-self: flex-end;
+    flex-direction: row;
+}
+
+.footer_follow img {
+    max-height: 40px;
+    width: auto;
+    margin-left: 10px;
+}
+
+.footer_wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+footer a {
+    color: #ffa03a;
+}
+
+
+/*----- 4. MAIN -----*/
+
+main {
+    max-width: 1300px;
+    flex: 1;
+    padding: 10px var(--page-margin);
+    margin: var(--page-margin) auto;
+}
+
+.sub_navigation {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding-top: 20vh;
+    height: 80vh;
+    width: 50vw;
+    align-items: center;
+}
+
+.sub_navigation:hover {
+    opacity: 1;
+}
+
+.block {
+    margin-top: 10px;
+}
+
+.text_block {
+    padding: 10px 0;
+    margin: 10px 0;
+}
+
+.mobile_hide {/*for ting, som skal vises på desktop men ikke mobile - de bliver displayet via mediaquery*/
+    display: none;
+}
+
+.index_attractions button {/*attraktionerne på forsiden - er button, for at javaScript kan finde ud af at linke*/
+    padding: 10px;
+}
+
+.index_attractions button:hover {/*gør, så der ikke er nogen hover-effekt, som der er på de andre knapper*/
+    background-color: transparent;
+}
+
+.image_content img {
+    margin-bottom: 5px;
+}
+
+table {/*tables, eks. med åbningstider og priser*/
+    margin-bottom: 20px;
+}
+
+td {/*de individuelle felter i et table*/
+    padding-right: 20px;
+    line-height: 1rem;
+}
+
+
+/*----- 5. HELPERS -----*/
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.flex_one {/*(og nedenstående) definerer, hvor meget div'erne skal fylde ift. de andre div'er*/
+    flex: 1;
+}
+
+.flex_two {
+    flex: 2;
+}
+
+.flex_three {
+    flex: 3;
+}
+
+.flex_four {
+    flex: 4;
+}
+
+.hidden {
+    display: none;
+}
+
+
+/*----- 6. MEDIA QUERIES -----*/
+
+@media only screen and (min-width: 600px) {
+    .footer_wrapper {
+        flex-direction: row;
+    }
+    .footer_block:first-child {
+        margin-right: 10px;
+    }
+    .header_img {
+        max-width: 50%;
+    }
+}
+
+@media only screen and (min-width: 800px) {
+    :root {
+        --page-margin: 45px;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    :root {
+        --page-margin: 45px;
+    }
+
+    .kalklandet nav {
+        background-color: rgba(255, 255, 255, 0.85);
+    }
+
+    .nav_container {
+        flex: 4;
+    }
+
+    nav {
+        flex: 5;
+        flex-direction: row;
+        background-color: rgba(255, 255, 255, 0.15);
+    }
+
+    nav button,
+    .sub_navigation button {
+        margin: 0;
+    }
+
+    button {
+        line-height: 2.5rem;
+    }
+
+    .burger_menu {
+        display: block;
+    }
+
+    .nav_bar {
+        flex: 5;
+        display: flex;
+        position: relative;
+        background-color: transparent;
+        padding: 0;
+        height: auto;
+        width: auto;
+    }
+
+    .sub_navigation {
+        width: 250px;
+        padding: 30px 50px 30px 30px;
+        position: absolute;
+        top: auto;
+        left: 0;
+        height: inherit; /*højden tilpasser sig antallet af menupunkter*/
+        border-radius: 0 100px 100px 0;
+    }
+
+    .attraction_dropdown {
+        position: absolute;
+        top: 2.6rem;
+        display: none;
+        background-color: rgba(255, 251, 249, 0.95);
+        width: 350px;
+        padding: 10px;
+    }
+
+    .attraction_dropdown .button_chosen {
+        background-color: rgba(0, 0, 0, 0.07);
+    }
+
+    nav .button_chosen {
+        background-color: rgba(255, 255, 255, 0.2);
+    }
+
+    nav .index.button_chosen {
+        background-color: rgba(254, 100, 0, 0.2);
+    }
+
+    .sub_navigation button {
+        text-align: right;
+        line-height: 2rem;
+        padding: 0 6px;
+    }
+
+    .burger_icon {
+        display: none;
+    }
+
+    .header_img {
+        flex: 1;
+    }
+
+    .search {
+        margin: 0 0 0 30px;
+    }
+
+    .page_title {
+        display: block;
+    }
+
+    .mobile_page_title {
+        display: none;
+    }
+
+    .footer_wrapper:first-child {
+        margin-right: 10px;
+    }
+
+    .block {
+        margin-top: 0;
+    }
+
+    .block:first-child {
+        margin-left: 0;
+    }
+
+    .mobile_hide {
+        display: block;
+    }
+
+    .text_block {
+        margin: 0;
+    }
+
+    .margin_top {
+        margin-top: 10px;
+    }
+
+    .index_attractions {
+        flex-direction: row;
+    }
+
+    .main_page {
+        margin: 50px 0 50px 330px;
+    }
+}
+
+@media only screen and (min-width: 1280px) {
+    .flex {
+        flex-direction: row;
+    }
+
+    .page_title {
+        font-size: 3rem;
+    }
+
+    main {
+        padding: 20px;
+    }
+
+    .margin_left {
+        margin-left: 30px;
+    }
+
+    footer {
+        flex-direction: row;
+        padding: 20px var(--page-margin);
+    }
+
+    .sub_navigation {
+        opacity: 0.7;
+        transition: 0.3s;
+    }
+}
+
+
+/*----- Helpers, that are placed oddly....-----*/
+
+.display {
+    display: block;
+}
+
+.kalklandet button {
+    color: black;
+}
