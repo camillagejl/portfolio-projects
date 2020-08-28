@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/kea/3-semester/world-games/user-list/static/css/main.44dc2dbf.chunk.css",
+    "main.js": "/kea/3-semester/world-games/user-list/static/js/main.2c763781.chunk.js",
+    "main.js.map": "/kea/3-semester/world-games/user-list/static/js/main.2c763781.chunk.js.map",
+    "runtime-main.js": "/kea/3-semester/world-games/user-list/static/js/runtime-main.b316c560.js",
+    "runtime-main.js.map": "/kea/3-semester/world-games/user-list/static/js/runtime-main.b316c560.js.map",
+    "static/js/2.d4e4d1ad.chunk.js": "/kea/3-semester/world-games/user-list/static/js/2.d4e4d1ad.chunk.js",
+    "static/js/2.d4e4d1ad.chunk.js.map": "/kea/3-semester/world-games/user-list/static/js/2.d4e4d1ad.chunk.js.map",
+    "index.html": "/kea/3-semester/world-games/user-list/index.html",
+    "precache-manifest.fcac01ad7985f5de46770b348277b82e.js": "/kea/3-semester/world-games/user-list/precache-manifest.fcac01ad7985f5de46770b348277b82e.js",
+    "service-worker.js": "/kea/3-semester/world-games/user-list/service-worker.js",
+    "static/css/main.44dc2dbf.chunk.css.map": "/kea/3-semester/world-games/user-list/static/css/main.44dc2dbf.chunk.css.map",
+    "static/media/sort_arrow.svg": "/kea/3-semester/world-games/user-list/static/media/sort_arrow.4be69749.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.b316c560.js",
+    "static/js/2.d4e4d1ad.chunk.js",
+    "static/css/main.44dc2dbf.chunk.css",
+    "static/js/main.2c763781.chunk.js"
+  ]
+}
